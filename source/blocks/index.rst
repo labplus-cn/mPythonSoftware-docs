@@ -12,7 +12,6 @@
     accelerometer.rst
     rgb.rst
     NeoPixel.rst
-    bme280.rst
     wifi.rst
     pin.rst
     radio.rst
