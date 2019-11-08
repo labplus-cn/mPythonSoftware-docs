@@ -1,5 +1,6 @@
-# mPython-docs
-mPython在线文档：https://mPython.readthedocs.io/zh_CN/latest/
+# mPythonSoftware-docs
 
-掌控板在线文档：https://mpython.readthedocs.io/zh/master/
+mPythonSoftware在线文档：https://mPythonSoftware.readthedocs.io
+
+
 
