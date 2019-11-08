@@ -1,0 +1,280 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="text_print" id="f._]jT~Bcp2o:2I(D$^B" x="-1081" y="-493">
+    <value name="TEXT">
+      <shadow type="text" id="Ub?=QF/LVYuNd+=.eQ@!">
+        <field name="TEXT"></field>
+      </shadow>
+      <block type="text_format" id="6oj=SHW.3nAMkR^h@Ay@">
+        <value name="FORMAT">
+          <shadow type="text" id="=]X%;k2q2xhIwDcI9(^Q">
+            <field name="TEXT">Value: %.2f %.2f</field>
+          </shadow>
+        </value>
+        <value name="CONTENT">
+          <block type="tuple_create_with_items_insert" id="{f.ShE}R=}nAAIAQS^+q">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="math_number" id="XT(i{qE)fFcP50TD+mE6">
+                <field name="NUM">3.1415926</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="math_number" id="qiT(OlFCN]CoFXtl@bpR">
+                <field name="NUM">4.1415926</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="{#do:(*eRG}5Pl{(Axm%">
+        <value name="TEXT">
+          <shadow type="text" id="`S~o7wJhB58{jp3vEb$r">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="text_format2" id="(9RosxJkwz.e^Z#[$Rws">
+            <value name="FORMAT">
+              <shadow type="text" id="ll%vyp3C8T~A2WbN?pSr">
+                <field name="TEXT">Value: {:.3} {:.2}</field>
+              </shadow>
+            </value>
+            <value name="CONTENT">
+              <block type="tuple_create_with_items_insert" id="=Pv|GpGnNDCD*kOrm[xh">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="math_number" id="@it`v:~VJ;q(%kYGX=mu">
+                    <field name="NUM">3.1415926</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="math_number" id="Hm:2@6/}!lWzh/JdCAXy">
+                    <field name="NUM">3.1415926</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="[Y.dc(,TZEtKr)B|9k5y">
+            <value name="TEXT">
+              <shadow type="text" id="hQ+K,xkW;n)w}tKfG=gp">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="text_append_text" id="mIv~Km-(DH1*1_e;1V4)">
+                <value name="text_abc">
+                  <shadow type="text" id="cs,,?gJCs@G,X$LYHVj,">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                </value>
+                <value name="append_text">
+                  <shadow type="text" id="w8}aA$$lJ8g%Z^2|;i7d">
+                    <field name="TEXT">def</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="text_print" id="{ZF=3qx5o^@VjucC_mpf">
+                <value name="TEXT">
+                  <shadow type="text" id="-rAid|Yb--x^]Auw:Ihf">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="text_is_number" id="va[Q:u4ipb[zh,#Y2yR1">
+                    <field name="TYPE">.isdigit()</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="_pr4_`Ud$fj$;EP,!U*4">
+                        <field name="TEXT">123</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="text_print" id="qB1*CRoo+@sR#1*S?X*W">
+                    <value name="TEXT">
+                      <shadow type="text" id="B9n36i%+9G3-oTM.~SUS">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="text_is_number" id="x/-rL~ygc.yOO5jKAAP_">
+                        <field name="TYPE">.isalpha()</field>
+                        <value name="TEXT">
+                          <shadow type="text" id="yMI4%(^98xje28`sb]s~">
+                            <field name="TEXT">123abc</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="text_print" id="Sn/lkB,MXKdj!VIYil;x">
+                        <value name="TEXT">
+                          <shadow type="text" id="_a,$y].rI$BvGK;wTZAr">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="text_indexOf" id="84:NeKn|5+@#|:=1JYD2">
+                            <field name="END">FIRST</field>
+                            <value name="VALUE">
+                              <shadow type="text" id=":HK4d8zfnG_!n2a+=7|u">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                            </value>
+                            <value name="FIND">
+                              <shadow type="text" id="gHi-*n^_)_jzN+4*!50M">
+                                <field name="TEXT">b</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="text_print" id="x?W4?w`[v)~uEX_!daZ=">
+                            <value name="TEXT">
+                              <shadow type="text" id="aJ[u2#Zw{iVXV:GgJ$-G">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="text_indexOf" id="*PJLvKNzjJ2+AXvR]36.">
+                                <field name="END">LAST</field>
+                                <value name="VALUE">
+                                  <shadow type="text" id="3+hbDiZq.9)(49=_qV)E">
+                                    <field name="TEXT">abcb</field>
+                                  </shadow>
+                                </value>
+                                <value name="FIND">
+                                  <shadow type="text" id="Ij!cpkBkP)YX3Nm7HCGI">
+                                    <field name="TEXT">b</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="text_print" id="AMnv?L}um,U/;i`4.A$9">
+                                <value name="TEXT">
+                                  <shadow type="text" id="`Cf],2a69*:=MQP;(O#p">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                  <block type="text_changeCase" id="`P/||r0c0.qF@Nj;]*uS">
+                                    <field name="CASE">UPPERCASE</field>
+                                    <value name="TEXT">
+                                      <shadow type="text" id="UB:fkRA7A,C^bIx#A#`N">
+                                        <field name="TEXT">abA</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="text_print" id="o6;3bn48yZZz=xCw/Y*r">
+                                    <value name="TEXT">
+                                      <shadow type="text" id="A#*!wfplyp)U_8jR[1@7">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                      <block type="text_changeCase" id="mT,G/{}*e,:aLEjT{`:J">
+                                        <field name="CASE">LOWERCASE</field>
+                                        <value name="TEXT">
+                                          <shadow type="text" id="B/O;Y+O}T)E~vI0i+o`M">
+                                            <field name="TEXT">abA</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="text_print" id="Rp3O;(.}2c-Se`Pi9qA:">
+                                        <value name="TEXT">
+                                          <shadow type="text" id="H{M]dUT~RbW%Qd7)Gk2}">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="text_trim" id="|dr+$Jxag{zp|9.9bKI+">
+                                            <field name="MODE">BOTH</field>
+                                            <value name="TEXT">
+                                              <shadow type="text" id="vLyySQ?XWRh-SX1wARmC">
+                                                <field name="TEXT">         aa                   </field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="text_print" id="ycfzdMgu[8N]_=$27GB~">
+                                            <value name="TEXT">
+                                              <shadow type="text" id="5TxW,/ZUp!S,JHKUW,8B">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                              <block type="text_to_byte" id="iY^plyGRZ}cs?bl#^,u?">
+                                                <value name="TEXT">
+                                                  <shadow type="text" id="Dt|,AeArdAGb!~mWg`hi">
+                                                    <field name="TEXT">abc</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="text_print" id="SnoO_`UHG@KMdX1+.aq`">
+                                                <value name="TEXT">
+                                                  <shadow type="text" id="1n6d@?@TIvLvG!YG0,Zg">
+                                                    <field name="TEXT"></field>
+                                                  </shadow>
+                                                  <block type="mpython_bytes_decode" id="#*%NH:P1h8o+$bazi-=j">
+                                                    <value name="bytes_decode">
+                                                      <block type="text_to_byte" id="(G=Djvz;xn1dFIyZYRDz">
+                                                        <value name="TEXT">
+                                                          <shadow type="text" id="MZe[dF~phV5o9GjJ-:.G">
+                                                            <field name="TEXT">abc</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="text_print" id="GXA}1*JSetc}t9;pB2/?">
+                                                    <value name="TEXT">
+                                                      <shadow type="text" id="56`.M;@U@6xq`M_Oya`p">
+                                                        <field name="TEXT"></field>
+                                                      </shadow>
+                                                      <block type="mpython_ujson_dumps" id="/c[eW^LVfrW8D6|`9.RY">
+                                                        <value name="data">
+                                                          <shadow type="text_dict" id="R}EnH,F+]:O/S@_UxPIN">
+                                                            <field name="TEXT">"Age":8</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="text_print" id="L]c*8_R/[{^3l}^r]M:.">
+                                                        <value name="TEXT">
+                                                          <shadow type="text" id="56`.M;@U@6xq`M_Oya`p">
+                                                            <field name="TEXT"></field>
+                                                          </shadow>
+                                                          <block type="mpython_ujson_loads" id="+.]lGQPvKm~e5#?IuQGM">
+                                                            <value name="data">
+                                                              <shadow type="text" id="|M^B8VG/@McC!S2*OxbD">
+                                                                <field name="TEXT">{"Age":8}</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
