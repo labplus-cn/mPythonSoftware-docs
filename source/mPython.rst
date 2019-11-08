@@ -10,7 +10,7 @@ mPython 使用说明
 
 * https://cdn.makeymonkey.com/autoUpdate/mpython/mac/mPython_0.1.3.pkg (Mac OS)
 
-* https://cdn.makeymonkey.com/autoUpdate/mpython/linux/mpython_linux.zip (Linux)
+* https://cdn.makeymonkey.com/autoUpdate/mpython/linux/mpython_linux.tar.xz (Linux)
 
 .. Hint::
 
