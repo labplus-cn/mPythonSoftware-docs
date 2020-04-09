@@ -6,11 +6,14 @@ mPython 使用说明
 
 目前最新版本为0.1.3，支持Windows 7/8/10、Macos、Linux：
 
-* https://cdn.makeymonkey.com/autoUpdate/mpython/mPython%20Setup%200.2.2.exe (Win 7 / 8 / 10)
+Win 7 / 8 / 10
+* https://cdn.makeymonkey.com/autoUpdate/mpython/mPython%20Setup%200.2.2.exe 
 
-* https://cdn.makeymonkey.com/autoUpdate/mpython/mac/mPython_0.2.2.pkg (Mac OS)
+Mac OS
+* https://cdn.makeymonkey.com/autoUpdate/mpython/mac/mPython_0.2.2.pkg 
 
-* http://steamaker.oss-cn-shenzhen.aliyuncs.com/autoUpdate/mpython/linux-x64/mPython_linux_0.2.2.tar.xz (Linux)
+Linux
+* http://steamaker.oss-cn-shenzhen.aliyuncs.com/autoUpdate/mpython/linux-x64/mPython_linux_0.2.2.tar.xz 
 
 .. Hint::
 
