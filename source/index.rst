@@ -26,7 +26,7 @@ mPython是一款掌控板专用、易上手、可图形化编程的软件。
 
 .. toctree::
    :maxdepth: 2
-
+   index.rst
    mPython.rst
    掌控板.rst
    blocks/index.rst
