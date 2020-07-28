@@ -100,9 +100,23 @@ Jupyter
     :width: 500px
 
 
+保存本地
+````````
 
+点击“文件”菜单栏“保存本地”
 
+.. image:: /images/mPython_new/mPython_4_17.png
+    :width: 500px
 
+选择保存xml或者py文件
+
+.. image:: /images/mPython_new/mPython_4_18.png
+    :width: 500px
+
+点击保存
+
+.. image:: /images/mPython_new/mPython_4_19.png
+    :width: 500px
 
 
 
