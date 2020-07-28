@@ -23,7 +23,7 @@ mPython编程软件下载地址：https://www.labplus.cn/software
 
 安装CP210x的驱动，如果先前安装过则可以忽略。点击“下一步”
 
-.. image:: /images/mPython_new/mPython_4_5.png
+.. image:: /images/mPython_new/mPython_4_4.png
     :width: 500px
     
 选择我接受这个协议，点击“下一步。”
