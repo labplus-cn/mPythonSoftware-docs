@@ -23,7 +23,7 @@ mPython编程软件下载地址：https://www.labplus.cn/software
 
 安装CP210x的驱动，如果先前安装过则可以忽略。点击“下一步”
 
-.. image:: /images/mPython_new/mPython_4_4.png
+.. image:: /images/mPython_new/mPython_4_5.png
     :width: 500px
     
 选择我接受这个协议，点击“下一步。”
@@ -42,25 +42,69 @@ mPython编程软件下载地址：https://www.labplus.cn/software
     :width: 500px
 
 
-软件功能展示
+软件界面展示
 -----------
+
 编辑工具
 ````````
-a
-````
-b
-````
+
 硬件编程
+
 .. image:: /images/mPython_new/mPython_4_9.png
     :width: 500px
 
 Python3.6
+
 .. image:: /images/mPython_new/mPython_4_10.png
     :width: 500px
 
 Jupyter
+
 .. image:: /images/mPython_new/mPython_4_11.png
     :width: 500px
+
+
+文件菜单栏
+-----------
+
+新建文件
+````````
+
+点击“文件”菜单栏“新建文件”
+
+.. image:: /images/mPython_new/mPython_4_12.png
+    :width: 500px
+
+新建文件将会清除编程区内所有模块，点击“确定”
+
+.. image:: /images/mPython_new/mPython_4_13.png
+    :width: 500px
+
+
+打开本地
+````````
+
+点击“文件”菜单栏“打开本地”
+
+.. image:: /images/mPython_new/mPython_4_14.png
+    :width: 500px
+
+选择xml结尾或者py结尾的文件，点击“打开”
+
+.. image:: /images/mPython_new/mPython_4_15.png
+    :width: 500px
+
+加载对应的图形化代码
+
+.. image:: /images/mPython_new/mPython_4_16.png
+    :width: 500px
+
+
+
+
+
+
+
 
 
 
