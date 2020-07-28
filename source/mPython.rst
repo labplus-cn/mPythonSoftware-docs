@@ -119,166 +119,101 @@ Jupyter
     :width: 500px
 
 
+保存代码库
+````````
 
+点击“文件”菜单栏“保存代码库”
 
-
-分割
------------
-
-软件安装
------------
-
-目前最新版本为0.1.3，支持Windows 7/8/10、Macos、Linux：
-
-点击链接下载：Win 7/8/10，Mac OS，Linux
-* https://cdn.makeymonkey.com/autoUpdate/mpython/mPython%20Setup%200.2.2.exe 
-* https://cdn.makeymonkey.com/autoUpdate/mpython/mac/mPython_0.2.2.pkg 
-* http://steamaker.oss-cn-shenzhen.aliyuncs.com/autoUpdate/mpython/linux-x64/mPython_linux_0.2.2.tar.xz 
-
-.. Hint::
-
-  安装过程有可能被杀毒软件误报病毒，需要选择“允许程序所有操作”。
-
-
-安装软件的最后一步，会自动安装CP210x的驱动，如果先前安装过则可以忽略。
-
-.. image:: /images/mPython/software_2.png
+.. image:: /images/mPython_new/mPython_4_20.png
     :width: 500px
 
-接入硬件
------------
+保存代码库需要先登录用户，关于用户登录请查看4.4.9“注册/登录”
+用户登录后，输入将保存的代码库名称，点击确定，即可保存成功
 
-点击桌面快捷方式mPython ，打开软件主界面。
+.. image:: /images/mPython_new/mPython_4_21.png
+    :width: 500px
 
-.. image:: /images/mPython/mPython_1.png
+代码库保存成功后点击查看，即可查看保存的代码库
 
-
-用USB线接入掌控板。正确识别后，端口自行显示“已连接”，如下图：
-
-.. image:: /images/mPython/mPython_2.png
-
+.. image:: /images/mPython_new/mPython_4_22.png
+    :width: 500px
 
 
-上述顺序可以颠倒，即：可以先接入掌控，再打开软件。
-
-
-仿真
------------
-
-编写代码之后点击右边掌控板的播放按钮。
-
-.. image:: /images/mPython/mPython_fz.png
-
-探究
------------
-
-如图所示，使用数学分类下面的图表指令，即可实现数据可视化
-
-.. image:: /images/mPython/mPython_tj.png
-
-
-
-图形编辑区
------------
-
-保存
+掌控板文件
 ````````
 
-点击“文件”，“保存本地”保存程序对应的代码，后缀为py：
+点击“掌控板文件”可查看掌控板内的文件
 
-.. image:: /images/mPython/mPython_3.png
+.. image:: /images/mPython_new/mPython_4_23.png
+    :width: 500px
 
-点击“文件”，“打开本地”打开保存的py文件：
+加载掌控板文件
 
-.. image:: /images/mPython/mPython_5.png
+.. image:: /images/mPython_new/mPython_4_24.png
+    :width: 500px
 
-读取效果如图：
+掌控板内文件目录结构
 
-.. image:: /images/mPython/mPython_4.png
+.. image:: /images/mPython_new/mPython_4_25.png
+    :width: 500px
 
-点击“文件”，“保存本地”保存程序对应的代码及图形化模块，后缀为xml：
+点击“图形”按钮可回到图形化界面
 
-.. image:: /images/mPython/mPython_6.png
+.. image:: /images/mPython_new/mPython_4_26.png
+    :width: 500px
 
-点击“文件”，“打开本地”打开保存的xml文件，读取效果如图：
 
-.. image:: /images/mPython/mPython_7.png
-
-模块提示
+教程菜单栏
 ````````
-鼠标停留在模块上会有提示：
 
-.. image:: /images/mPython/mPython_8.png
+教学视频
+点击“教程”菜单栏“教学视频”，即可查看软件使用的操作视频
+
+.. image:: /images/mPython_new/mPython_4_27.png
+    :width: 500px
+
+.. image:: /images/mPython_new/mPython_4_28.png
+    :width: 500px
 
 帮助文档
-````````
-在模块上，点击鼠标右键：
+点击“教程”菜单栏“帮助文档”，跳转到https://mpythonsoftware.readthedocs.io/查看详细专业版说明文档
 
-.. image:: /images/mPython/mPython_9.png
+.. image:: /images/mPython_new/mPython_4_29.png
+    :width: 500px
 
-点击帮助，即可跳转至帮助文档：
+在线论坛
+点击“教程”菜单栏“在线论坛”，跳转到https://www.labplus.cn/forum
 
-.. image:: /images/mPython/mPython_10.png
+.. image:: /images/mPython_new/mPython_4_30.png
+    :width: 500px
 
-切换图形/代码模式
-````````
+精品课程
+点击“教程”菜单栏“精品课程”，即可查看海量的教学课程
 
-点击“</>代码”，即可实现对应切换：
+.. image:: /images/mPython_new/mPython_4_31.png
+    :width: 500px
 
-.. image:: /images/mPython/mPython_11.png
+点击选择查看其中的详细教程
 
-.. image:: /images/mPython/mPython_12.png
+.. image:: /images/mPython_new/mPython_4_32.png
+    :width: 500px
 
-改变图形区/代码区大小
-````````			
+教程的详细说明，点击加载程序即可加载相对应的代码
 
-鼠标停留在圈红的灰色三角上，按住左键左右拖动即可：
+.. image:: /images/mPython_new/mPython_4_33.png
+    :width: 500px
+ 
 
-.. image:: /images/mPython/mPython_13.png
-
-
-代码编辑区
------------
-
-代码联想：
-
-.. image:: /images/mPython/mPython_14.png
+.. image:: /images/mPython_new/mPython_4_34.png
+    :width: 500px
 
 
-运行/刷入
------------
 
-运行/刷入
-````````
 
-运行/刷入两种模式皆可实现程序效果。
-
-按钮字样变成“已连接”字样时，即可开始运行/刷入：
-
-.. image:: /images/mPython/mPython_15.png
 
 .. Note::
 
   “运行”的代码脱机后即失效，“刷入”的代码脱机后再次连接电源仍有效
-
-代码查错
-````````
-
-圈红处是反馈的信息，包括硬件信息、代码报错信息等：
-
-.. image:: /images/mPython/mPython_16.png
-
-比如，红字为代码报错信息：
-
-.. image:: /images/mPython/mPython_17.png
-
-
-烧录固件
------------
-
-点击“设置”“烧录固件”，选择掌控版官方固件：
-
-.. image:: /images/mPython/mPython_18.png
 
 .. Hint::
 
