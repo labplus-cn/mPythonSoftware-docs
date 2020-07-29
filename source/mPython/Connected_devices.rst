@@ -5,4 +5,4 @@
 只有连接上掌控板后mPython才能对掌控板进行烧录固件及刷入代码等操作。
 
 .. image:: /images/mPython_new/mPython_4_36.png
-    :width: 500px
+    :width: 600px

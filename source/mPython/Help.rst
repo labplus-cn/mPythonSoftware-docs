@@ -7,10 +7,10 @@
 也可以在输入框搜索问题，选择问题查看
 
 .. image:: /images/mPython_new/mPython_4_66.png
-    :width: 500px
+    :width: 600px
 
 .. image:: /images/mPython_new/mPython_4_67.png
-    :width: 500px
+    :width: 600px
 
 .. image:: /images/mPython_new/mPython_4_68.png
-    :width: 500px
+    :width: 600px

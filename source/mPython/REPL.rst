@@ -6,4 +6,4 @@
 打印掌控板固件信息，如图所示：
 
 .. image:: /images/mPython_new/mPython_4_82.png
-    :width: 500px
+    :width: 600px

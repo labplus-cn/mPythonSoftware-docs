@@ -5,7 +5,7 @@
 代码写好后点击“刷入”按钮即可看到对应的效果，代码将会刷入到掌控板设备里面
 
 .. image:: /images/mPython_new/mPython_4_39.png
-    :width: 500px
+    :width: 600px
     
 .. Note::
 

@@ -8,4 +8,4 @@
 点击“普通”按钮图标 可以回到初始状态 
 
 .. image:: /images/mPython_new/mPython_4_35.png
-    :width: 500px
+    :width: 600px

@@ -9,20 +9,20 @@
 用户可以烧录系统自带固件也可以烧录用户自定义上传的固件
 
 .. image:: /images/mPython_new/mPython_4_52.png
-    :width: 500px
+    :width: 600px
 
 .. image:: /images/mPython_new/mPython_4_53.png
-    :width: 500px
+    :width: 600px
 
 选择烧录掌控板官方固件，点击确定，开始烧录
 
 .. image:: /images/mPython_new/mPython_4_54.png
-    :width: 500px
+    :width: 600px
 
 烧录完成
 
 .. image:: /images/mPython_new/mPython_4_55.png
-    :width: 500px
+    :width: 600px
 
 .. Hint::
 
@@ -36,32 +36,32 @@
 白天模式
 
 .. image:: /images/mPython_new/mPython_4_56.png
-    :width: 500px
+    :width: 600px
 
 夜间模式
 
 .. image:: /images/mPython_new/mPython_4_57.png
-    :width: 500px
+    :width: 600px
 
 高级设置
 ````````
 
 .. image:: /images/mPython_new/mPython_4_58.png
-    :width: 500px
+    :width: 600px
 
 语言设置
 ^^^^^
 点击高级设置后弹出对话框，即可看到第一个选项——语言设置。支持3种语言切换，简体中文、繁体中文、英语。
 
 .. image:: /images/mPython_new/mPython_4_59.png
-    :width: 500px
+    :width: 600px
 
 更换主控
 ^^^^^
 点击高级设置后弹出对话框，即可看到第二个选项——更换主控，选择需要更换的主控即可
 
 .. image:: /images/mPython_new/mPython_4_60.png
-    :width: 500px
+    :width: 600px
 
 检查更新
 ^^^^^
@@ -70,16 +70,16 @@
 已是最新版本界面：
 
 .. image:: /images/mPython_new/mPython_4_61.png
-    :width: 500px
+    :width: 600px
 
 发现新版本界面：点击安装即可完成更新
 
 .. image:: /images/mPython_new/mPython_4_62.png
-    :width: 500px
+    :width: 600px
 
 初始化库
 ^^^^^
 点击高级设置后弹出对话框，即可看到第四个选项——初始化库。可恢复原始资源库
 
 .. image:: /images/mPython_new/mPython_4_63.png
-    :width: 500px
+    :width: 600px
