@@ -132,6 +132,9 @@ Jupyter
     :width: 500px
 
 保存代码库需要先登录用户，关于用户登录请查看“注册/登录”
+
+跳转到：https://mpythonsoftware.readthedocs.io/zh/latest/mPython/Login.html
+
 用户登录后，输入将保存的代码库名称，点击确定，即可保存成功
 
 .. image:: /images/mPython_new/mPython_4_21.png
@@ -232,10 +235,8 @@ Jupyter
 连接设备
 -----------
 
-点击设备连接区域 可看到已连接设备的端口号 点击连接端口号即可连上
-点击断开连接则会断开软件与设备的连接
-打开软件默认会选择第一个端口号连上
-只有连接上掌控板后mPython才能对掌控板进行烧录固件及刷入代码等操作
+点击设备连接区域，可看到已连接设备的端口号，点击连接端口号即可连上，点击断开连接则会断开软件与设备的连接，打开软件默认会选择第一个端口号连上，
+只有连接上掌控板后mPython才能对掌控板进行烧录固件及刷入代码等操作。
 
 .. image:: /images/mPython_new/mPython_4_36.png
     :width: 500px

@@ -6,7 +6,7 @@
     :width: 500px
 
 编写一个程序
------------
+````````
 
 .. image:: /images/mPython_new/mPython_4_93.png
     :width: 500px
@@ -22,7 +22,6 @@
     :width: 500px
 
 右侧三个小按钮的功能从上到下分别是：将图形化指令居中并重置为默认大小、将图形化指令形状增大、将图形化指令形状减小
------------
 
 .. image:: /images/mPython_new/mPython_4_96.png
     :width: 500px
