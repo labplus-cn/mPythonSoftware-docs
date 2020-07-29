@@ -745,6 +745,8 @@ Python库管理
 .. image:: /images/mPython_new/mPython_4_113.png
     :width: 500px
 
+.. image:: /images/mPython_new/mPython_4_114.png
+    :width: 500px
 
 
 
