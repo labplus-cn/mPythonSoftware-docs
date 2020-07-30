@@ -14,6 +14,7 @@ Python3.6模式的界面
 Python3.6模式的图形化指令分类分为：
 Python语法基础相关指令（循环、逻辑、数学、文本、变量）
 高级指令（函数、列表、元组、集合、字典、引脚）
+扩展（添加、代码库）
 
 .. image:: /images/mPython_new/mPython_4_115.png
     :width: 600px
