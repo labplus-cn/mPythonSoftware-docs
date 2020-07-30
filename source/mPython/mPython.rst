@@ -93,7 +93,7 @@ Jupyter
 .. image:: /images/mPython_new/mPython_4_14.png
     :width: 500px
 
-选择xml结尾或者py结尾的文件，点击“打开”
+选择mxml、xml结尾或者py结尾的文件，点击“打开”
 
 .. image:: /images/mPython_new/mPython_4_15.png
     :width: 500px
@@ -112,7 +112,7 @@ Jupyter
 .. image:: /images/mPython_new/mPython_4_17.png
     :width: 500px
 
-选择保存xml或者py文件
+选择保存mxml或者py文件
 
 .. image:: /images/mPython_new/mPython_4_18.png
     :width: 500px
@@ -132,9 +132,7 @@ Jupyter
     :width: 500px
 
 保存代码库需要先登录用户，关于用户登录请查看“注册/登录”
-
 跳转到：https://mpythonsoftware.readthedocs.io/zh/latest/mPython/Login.html
-
 用户登录后，输入将保存的代码库名称，点击确定，即可保存成功
 
 .. image:: /images/mPython_new/mPython_4_21.png
@@ -254,7 +252,7 @@ Jupyter
 运行
 -----------
 
-代码写好后点击“运行”按钮即可看到对应的效果，代码将不会刷入到掌控板设备里面
+代码写好后点击“运行”按钮即可看到对应的效果
 
 .. image:: /images/mPython_new/mPython_4_38.png
     :width: 500px

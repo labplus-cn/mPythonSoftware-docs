@@ -32,4 +32,5 @@
     bluebit.rst
     Yeelight.rst
     MQTT.rst
+    k210.rst
 

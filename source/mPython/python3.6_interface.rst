@@ -1,8 +1,9 @@
-python3.6界面细节补充
+python3.6模式细节补充
 ====================
 
 
-Python3.6界面
+Python3.6模式的界面
+````````
 
 .. image:: /images/mPython_new/mPython_4_102.png
     :width: 600px
@@ -10,16 +11,20 @@ Python3.6界面
 左侧指令分类栏
 ````````
 
-图形化指令分类分为：
-Python3.6相关指令Python语法基础相关指令（循环、逻辑、数学、文本、变量）
-高级指令（函数、列表、元组、集合、字典、引脚、微信小程序）
+Python3.6模式的图形化指令分类分为：
+Python语法基础相关指令（循环、逻辑、数学、文本、变量）
+高级指令（函数、列表、元组、集合、字典、引脚）
+
+.. image:: /images/mPython_new/mPython_4_115.png
+    :width: 600px
+
 扩展功能介绍：点击“扩展”将会出现“添加”按钮，点击添加会出现以下界面
-因为AI扩展都需要使用库文件，所以首次使用时需要安装
+因为AI扩展都需要使用库文件，所以首次使用时需要点击“安装”。
 
 .. image:: /images/mPython_new/mPython_4_103.png
     :width: 600px
 
-安装完成后再点击加载，可以在左侧指令分类栏查看，如图所示：
+安装完成后再点击“加载”，可以在左侧指令分类栏查看，如图所示：
 
 .. image:: /images/mPython_new/mPython_4_104.png
     :width: 600px

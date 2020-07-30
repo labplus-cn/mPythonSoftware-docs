@@ -1,0 +1,827 @@
+.. module:: k210
+
+:mod:`k210` ─ k210模块
+===============
+
+提供与k210相关的函数接口，AI摄像头、1956、人工智能交互实验箱都包含有k210处理器的相关图形化指令
+
+Image 类
+++++++++++
+
+图像处理相关
+
+构建对象
+~~~~~~~~~~
+.. class:: Image(repl, ref=None)
+
+-----------------------------------------
+
+兼容掌控板绘图相关
+::::::::::::::::::
+
+    为了便于使用和教学,提供一些与掌控板相兼容的绘图函数接口。注意,这些函数并不是MaixPy原生所有。
+
+
+    .. image:: /images/blocks/k210/18.png
+        :scale: 90 %
+
+    .. method:: Image.DispChar(text, x, y, color=(255, 255, 255))
+
+    **描述：**  在图像中的(x, y)位置开始绘制文本。字体采用 `Google Noto Sans CJK <http://www.google.cn/get/noto/help/cjk/>`_ 开源无衬线字体字体。字体高度16像素点,支持英文,简体中文繁体中文，日文和韩文语言。
+
+    **参数：**
+        - ``text`` -- 绘制的文本
+        -  ``x`` 、 ``y`` -- 起点坐标
+        - ``color`` -- 字体颜色
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -------------------------------------------
+
+OpenMV
+:::::::::::::
+
+    移植于MaixPy的OpenMV函数
+
+
+
+    .. image:: /images/blocks/k210/26.png
+        :scale: 90 %
+
+    .. method:: Image.load(path, copy_to_fb=True)
+
+    **描述：**  
+    从 ``path`` 中的文件中创建一个新的图像对象。可以把图片存放至SD卡中,将对应图片文件路径作为该函数参数,将会创建该帧图片对象。支持bmp/pgm/ppm/jpg/jpeg格式的图像文件。
+    
+    **参数：**
+    若 ``copy_to_fb`` 为True，图像会直接载入帧缓冲区，您就可以加载大幅图片了。若为False，图像会载入MicroPython的堆中，堆远比帧缓冲区小。``copy_to_fb`` 为False，您应该尽量把图像大小控制在8KB以下。若为True，则图像最大可为160KB。
+
+    .. attention:: 使用时需要注意图片分辨率大小,过大的话会导致内存错误！
+    
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/25.png
+        :scale: 90 %
+
+    .. method:: save(path, roi=None, quality=50)
+
+    **描述：** 
+    将图像的副本保存到 ``path`` 中的k210的文件系统
+
+    支持bmp/pgm/ppm/jpg/jpeg格式的图像文件。注意：您无法将jpeg格式的压缩图像保存成未压缩的格式。
+
+    **参数：**
+
+    - ``roi`` 是一个用以复制的矩形的感兴趣区域(x, y, w, h)。如果未指定，ROI即复制整个图像的图像矩形。但这不适用于 ``JPEG`` 图像。
+    - ``quality`` 指在图像尚未被压缩时将图像保存为JPEG格式的JPEG压缩质量。
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/14.png
+        :scale: 90 %
+
+    .. method:: Image.clear()
+
+    **描述：** 
+    将图像中的所有像素设置为零（非常快）。
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/17.png
+        :scale: 90 %
+
+    .. method:: Image.pix_to_ai()
+
+    **描述：** 
+    将图像的所有像素点转换成AI运算的数据
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/16.png
+        :scale: 90 %
+
+    .. method:: Image.strech_char(de_dark)
+
+    **描述：** 
+    预处理消除暗角
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/15.png
+        :scale: 90 %
+
+    .. method:: Image.invert()
+
+    **描述：** 
+    将二进制图像0（黑色）变为1（白色），1（白色）变为0（黑色），非常快速地翻转二进制图像中的所有像素值。
+
+    不支持压缩图像和Bayer图像。
+
+    
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/19.png
+        :scale: 90 %
+
+    .. method:: Image.draw_line(x0, y0, x1, y1, color=(255, 255, 255), thickness=1)
+
+    **描述：** 
+    在图像上绘制一条从(x0，y0)到(x1，y1)的线。 您可以单独传递x0，y0，x1，y1，也可以传递给元组(x0，y0，x1，y1)。
+
+    **参数：**
+
+    - ``color`` -  是用于灰度或RGB565图像的元组。默认为白色。但是，您也可以传递灰度图像的基础像素值(0-255)或RGB565图像的字节反转RGB565值。
+    - ``thickness`` -  控制线的粗细像素。
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/21.png
+        :scale: 90 %
+
+    .. method:: Image.draw_circle(x, y, radius, color=(255, 255, 255), thickness=1, fill=False)
+
+    **描述：** 
+    在图像上绘制一个圆形。 您可以单独传递x，y，半径 或 作为元组(x，y，radius)传递。
+
+    **参数：**
+
+    - ``color`` -  是用于灰度或RGB565图像的元组。默认为白色。但是，您也可以传递灰度图像的基础像素值(0-255)或RGB565图像的字节反转RGB565值。
+    - ``thickness`` -  控制线的粗细像素。
+    - ``fill`` - 设置为True以填充圆形。
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/20.png
+        :scale: 90 %
+
+    .. method:: Image.draw_rectangle(x, y, w, h, color=(255, 255, 255), thickness=1, fill=False)
+
+    **描述：** 
+    在图像上绘制一个矩形。 您可以单独传递x，y，w，h或作为元组(x，y，w，h)传递。
+
+    **参数：**
+
+    - ``color`` -  是用于灰度或RGB565图像的元组。默认为白色。但是，您也可以传递灰度图像的基础像素值(0-255)或RGB565图像的字节反转RGB565值。
+    - ``thickness`` -  控制线的粗细像素。
+    - ``fill`` - 设置为True以填充矩形。
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/22.png
+        :scale: 90 %
+
+    .. method:: Image.draw_cross(x, y, color=(255, 255, 255), size=5, thickness=1)
+
+    **描述：** 
+    在图像上绘制一个十字。 您可以单独传递x，y或作为元组(x，y)传递。
+
+    **参数：**
+
+    - ``color`` -- 是用于灰度或RGB565图像的RGB888元组。默认为白色。但是，您也可以传递灰度图像的基础像素值(0-255)或RGB565图像的字节反转RGB565值。
+    - ``size`` --  控制十字线的延伸长度。
+    - ``thickness`` -- 控制边缘的像素厚度。
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/23.png
+        :scale: 90 %
+
+    .. method:: Image.draw_arrow(x0, y0, x1, y1, color=(255, 255, 255), thickness=1)
+
+    **描述：** 
+    在图像上绘制一条从(x0，y0)到(x1，y1)的箭头。 
+
+    **参数：**
+
+    - ``color`` - 是用于灰度或RGB565图像的元组。默认为白色。但是，您也可以传递灰度图像的基础像素值(0-255)或RGB565图像的字节反转RGB565值。
+    - ``thickness`` - 控制线的粗细像素。
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/24.png
+        :scale: 90 %
+
+    .. method:: Image.draw_image( image, x, y, x_scale=1.0, y_scale=1.0, alpha=256)
+
+    **描述：** 
+    绘制一个 ``image`` ，其左上角从位置x，y开始。
+
+    **参数：**
+
+        - ``x_scale`` --  控制图像在x方向(浮点数)缩放的程度。
+        - ``y_scale`` -- 控制图像在y方向(浮点数)缩放的程度。
+        - ``alpha`` -- 控制另一幅图像与这幅图像的混合程度。 alpha 应该是0到256之间的一个整数值。接近零的值会将更多其他图像混合到该图像中，而接近256的值则相反。
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/27.png
+        :scale: 90 %
+
+    .. method:: Image.resize(w,h)
+
+    **描述：** 
+    改变图像大小, ``w`` 、``h`` 为图像修改后的图像宽高
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/31.png
+        :scale: 90 %
+
+    .. method:: Image.find_blobs( thresholds, invert=False, roi=None, x_stride=2, y_stride=1, area_threshold=10, pixels_threshold=10, merge=False, margin=0)
+
+    **描述：** 
+    查找图像中所有色块，并返回一个包括每个色块的色块对象的列表。请观察 ``blob`` 对象以获取更多信息。
+   
+    **参数：**
+        - ``thresholds`` - 必须是元组列表。[(lo, hi), (lo, hi), ..., (lo, hi)] 定义你想追踪的颜色范围。对于灰度图像，每个元组需要包含两个值-最小灰度值和最大灰度值。仅考虑落在这些阈值之间的像素区域。对于RGB565图像，每个元组需要有六个值(l_lo，l_hi，a_lo，a_hi，b_lo，b_hi) - 分别是LAB L，A和B通道的最小值和最大值。为方便使用，此功能将自动修复交换的最小值和最大值。此外，如果元组大于六个值，则忽略其余值。相反，如果元组太短，则假定其余阈值处于最大范围。
+        - ``invert`` - 反转阈值操作，像素在已知颜色范围之外进行匹配，而非在已知颜色范围内。
+        - ``roi`` - 感兴趣区域的矩形元组(x，y，w，h)。如果未指定，ROI即整个图像的图像矩形。操作范围仅限于 ``roi`` 区域内的像素。
+        - ``x_stride`` - 查找某色块时需要跳过的x像素的数量。找到色块后，直线填充算法将精确像素。若已知色块较大，可增加 ``x_stride`` 来提高查找色块的速度。
+        - ``y_stride`` - 查找某色块时需要跳过的y像素的数量。找到色块后，直线填充算法将精确像素。若已知色块较大，可增加 ``y_stride`` 来提高查找色块的速度。
+        - ``area_threshold`` - 若一个色块的边界框区域小于 ``area_threshold`` ，则会被过滤掉。
+        - ``pixel_threshold`` - 若一个色块的像素数小于 ``pixel_threshold`` ，则会被过滤掉。
+        - ``merge`` - 若为True，则合并所有没有被过滤掉的色块，这些色块的边界矩形互相交错重叠。 
+        - ``margin`` - 可在相交测试中用来增大或减小色块边界矩形的大小。例如：边缘为1、相互间边界矩形为1的色块将被合并。
+
+        合并色块使颜色代码追踪得以实现。每个色块对象有一个代码值 ``code`` ，该值为一个位向量。
+        例如：若您在 `image.find_blobs` 中输入两个颜色阈值，则第一个阈值代码为1，第二个代码为2（第三个代码为4，第四个代码为8，以此类推）。
+        合并色块对所有的code使用逻辑或运算，以便您知道产生它们的颜色。这使得您可以追踪两个颜色，若您用两种颜色得到一个色块对象，则可能是一种颜色代码。
+
+        若您使用严格的颜色范围，无法完全追踪目标对象的所有像素，您可能需要合并色块。最后，若您想要合并色块，但不想两种不同阈值颜色的色块被合并，只需分别两次调用 ``image.find_blobs`` ，不同阈值色块就不会被合并。
+
+    ``blob`` 对象为字典类型,含关键字如下述:
+
+    ============= ===================================================================
+    关键字           说明
+    corners         返回对象的4个角的4 (x,y)元组列表。从左上方开始按顺时针顺序返回角。
+    min_corners     返回包含4个角的4 (x,y)元组的列表，该元组的边界大于该Blob的最小面积矩形的边界。 与 blob.corners() 不同，最小面积矩形的角并不一定位于blob上。
+    x               色块的边界框的x坐标(int)
+    y               色块的边界框的y坐标(int)
+    w               色块的边界框的宽
+    h               色块的边界框的高
+    pixels          属于色块(int)一部分的像素数量
+    cx              色块(int)的中心x位置
+    cy              色块(int)的中心y位置
+    rotation        返回色块的旋转（单位：弧度）。如果色块类似铅笔或钢笔，那么这个值就是介于0-180之间的唯一值。 如果这个色块圆的，那么这个值就没有效用。
+    rotation_deg    以度为单位返回blob的旋转角度。
+    rotation_rad    以弧度为单位返回blob的旋转度数。这个方法比 blob.rotation() 更具描述性。
+    code            返回一个32位的二进制数字，其中为每个颜色阈值设置一个位，这是色块的一部分。 例如，如果您通过 image.find_blobs 来寻找三个颜色阈值，这个色块可以设置为0/1/2位。 注意：除非以 merge=True 调用 image.find_blobs ，否则每个色块只能设置一位。 那么颜色阈值不同的多个色块就可以合并在一起了。 您也可以用这个方法以及多个阈值来实现颜色代码跟踪。
+    count           返回合并到此Blob中的Blob数。
+    perimeter       返回该blob周长上的像素数。
+    roundness       返回0到1之间的值，表示对象的圆度。一个圆将是1。
+    elongation      返回一个介于0和1之间的值，该值表示对象的长度（不是圆形）。一条线将是1。
+    area            返回色块周围的边框面积(w * h)
+    density         返回这个色块的密度比。这是在色块边界框区域内的像素点的数量。 总的来说，较低的密度比意味着这个对象的锁定得不是很好。 结果在0和1之间。
+    ============= ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/45.png
+        :scale: 90 %
+
+    .. method:: Image.find_apriltags()
+
+    **描述：** 
+    查找图像内的所有AprilTag, 并返回一个 `image.apriltag` 对象的列表。请参考 `image.apriltag` 对象以获取更多信息。
+
+    与二维码相比，AprilTags可在更远距离、较差光线和更扭曲的图像环境下被检测到。 AprilTags可应对所有种类的图像失真问题，而二维码并不能。也就是说，AprilTags只能将数字ID编码作为其有效载荷。
+    AprilTag使用的是 `TAG36H11` 。 
+
+    **参数：**
+    ``apriltag`` 对象为字典类型,含关键字如下述:
+
+    ================= ===================================================================
+    关键字               说明
+    corners             返回对象的4个角的4 (x,y)元组列表。从左上方开始按顺时针顺序返回角。
+    x                   AprilTag的边界框的x坐标(int)
+    y                   AprilTag的边界框的y坐标(int)
+    cx                  AprilTag(int)的中心x位置
+    cy                  AprilTag(int)的中心y位置
+    id                  返回AprilTag的数字ID。TAG36H11 -> 0 to 586。
+    rotation            返回以弧度计的AprilTag的旋度(int)。
+    decision_margin     返回AprilTag匹配的色饱和度（取值0.0 - 1.0），其中1.0为最佳。
+    hamming             返回AprilTag的可接受的数位误差数值。
+    goodness            返回AprilTag图像的色饱和度（取值0.0 - 1.0），其中1.0为最佳。
+    x_translation       返回距离摄像机x方向的变换，距离的单位未知。
+    y_translation       返回距离摄像机y方向的变换，距离的单位未知。
+    z_translation       返回距离摄像机z方向的变换，距离的单位未知。
+    x_rotation          返回以弧度计的AprilTag在X平面上的旋度。例：目视AprilTag，从左至右移动摄像头。
+    y_rotation          返回以弧度计的AprilTag在Y平面上的旋度。例：目视AprilTag，从上至下移动摄像头。
+    z_rotation          返回以弧度计的AprilTag在Z平面上的旋度。例：目视AprilTag，旋转摄像头。
+    ================= ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sensor 类
++++++++++++++
+
+摄像头传感器模块，进行摄像头配置及图像抓取等，用于控制开发板摄像头完成摄像任务。
+
+构建对象
+:::::::::::::
+
+.. class:: Sensor(repl)
+
+-----------------------------------------
+
+    .. image:: /images/blocks/k210/9.png
+        :scale: 90 %
+
+    .. method:: Sensor.snapshot()
+
+
+    **描述：**  摄像头拍摄图像,返回 ``Image`` 对象。
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/4.png
+        :scale: 90 %
+               
+    .. method:: Sensor.set_hmirror(enable)
+               
+    **描述：**  水平镜像模式。
+               
+    **参数：**  ``True`` 打开或 ``False`` 关闭。默认关闭。
+               
+    .. method:: Sensor.set_vflip(enable)
+                     
+    **描述：**  垂直翻转模式。
+               
+    **参数：**  ``True`` 打开或 ``False`` 关闭。默认关闭。
+
+
+
+
+
+
+               
+    .. image:: /images/blocks/k210/2.png
+        :scale: 90 %
+               
+    ..  method:: Sensor.set_framesize(framesize)
+               
+    **描述：**  用于设置摄像头输出帧大小，k210最大支持VGA格式，大于VGA将无法获取图像。推荐设置为 ``Sensor.QVGA`` 大小。
+               
+    **参数：**  
+
+        - `Sensor.VGA` -- 640x480
+        - `Sensor.QVGA` -- 320x240
+        - `Sensor.QQVGA` -- 160x120
+        - `Sensor.QQQVGA` -- 80x60
+        - `Sensor.QQQQVGA` -- 40x30
+
+
+
+
+
+               
+    .. image:: /images/blocks/k210/3.png
+        :scale: 90 %
+               
+    ..  method:: Sensor.set_pixformat(format)
+               
+    **描述：**  用于设置摄像头输出格式,推荐设置为 ``Sensor.RGB565`` 格式
+               
+    **参数：**  
+    - `Sensor.RGB565` -- 8-bits per pixel.
+    - `Sensor.GRAYSCALE` -- 16-bits per pixel.
+               
+
+
+
+
+
+               
+    .. image:: /images/blocks/k210/8.png
+        :scale: 90 %
+               
+    ..  method:: Sensor.set_windowing(roi)
+               
+    **描述：**  设置摄像头窗口大小。例如：你可以 set_windowing((224,224)) ， 然后 ``Sensor.snapshot()`` 以捕捉由摄像头输出的320*240分辨率的224x224中心像素。
+    您可使用窗口来获得定制的分辨率。
+                   
+    **参数：**  
+    - `摄像头窗口设置有限制，宽和高必须为8的倍数
+               
+
+
+
+
+
+
+               
+    .. image:: /images/blocks/k210/7.png
+        :scale: 90 %
+               
+    ..  method:: Sensor.run(enable)
+               
+    **描述：**  启动或关闭捕获图像功能(默认经过复位，设置帧大小，设置像素格式后会自动启动摄像头，不调用run(1)也会开始采集图像)
+               
+    **参数：**  
+    - ``enable`` -- 1 表示开启 0 表示停止
+               
+
+
+
+
+
+
+
+
+               
+    .. image:: /images/blocks/k210/5.png
+        :scale: 90 %
+               
+    ..  method:: Sensor.set_auto_whitebal(enable)   
+               
+    **描述：**  
+    设置摄像自动白平衡模式,默认打开
+
+    **参数：** 
+    - ``True`` 打开或 ``False`` 关闭。默认关闭。
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LCD 类
++++++++++++++
+
+显示屏控制
+
+构建对象
+~~~~~~~
+
+.. class:: LCD()
+
+-----------------------------------------
+               
+    .. image:: /images/blocks/k210/12.png
+        :scale: 90 %
+               
+    .. method:: LCD.display(image [,roi, oft])
+
+    **描述：**  
+    在液晶屏上显示一张 image（GRAYSCALE或RGB565）。
+
+    **参数：** 
+
+        - ``image`` -- 为Image对象
+        - ``roi``  -- 一个感兴趣区域的矩形元组(x, y, w, h)。若未指定，即为图像矩形
+        -  ``oft``  -- 图像显示位置
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/10.png
+        :scale: 90 %
+
+    .. method:: LCD.clear(color=LCD.BLACK)
+
+    **描述：**  
+    将液晶屏清空为黑色或者指定的颜色
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/11.png
+        :scale: 90 %
+
+    .. method:: LCD.draw_string(x, y, text [, font_color=LCD.RED, bg_color=LCD.BLACK]):
+
+    在lcd屏上绘制文本。从(x,y)位置开始绘制text文本, ``font_color`` 为文本的颜色。``bg_color`` 为背景颜色。
+
+
+    **参数：** 
+    颜色常量
+        - ``LCD.BLACK`` -- 黑色
+        - ``LCD.NAVY``  -- 深蓝色
+        - ``LCD.DARKGREEN``  -- 深绿色
+        - ``LCD.DARKCYAN`` -- 深青色
+        - ``LCD.MAROON``  -- 褐红色
+        - ``LCD.PURPLE``  -- 紫色
+        - ``LCD.OLIVE`` -- 橄榄色
+        - ``LCD.LIGHTGREY``  -- 淡灰色
+        - ``LCD.DARKGREY``  -- 深灰色
+        - ``LCD.BLUE`` -- 蓝色
+        - ``LCD.GREEN``  -- 绿色
+        - ``LCD.RED``  -- 红色
+        - ``LCD.MAGENTA``  -- 洋红色
+        - ``LCD.YELLOW``  -- 黄色
+        - ``LCD.WHITE``  -- 白色
+        - ``LCD.ORANGE``  -- 橙色
+        - ``LCD.GREENYELLOW``  -- 黄绿色
+        - ``LCD.PINK``  -- 粉色
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KPU 类
++++++++++++++
+KPU是通用的神经网络处理器，它可以在低功耗的情况下实现卷积神经网络计算，时时获取被检测目标的大小、坐标和种类，对人脸或者物体进行检测和分类。
+
+KPU 具备以下几个特点：
+
+    - 支持主流训练框架按照特定限制规则训练出来的定点化模型
+    - 对网络层数无直接限制，支持每层卷积神经网络参数单独配置，包括输入输出通道数目、输入输 出行宽列高
+    - 支持两种卷积内核 1x1 和 3x3
+    - 支持任意形式的激活函数
+    - 实时工作时最大支持神经网络参数大小为 5.5MiB 到 5.9MiB
+    - 非实时工作时最大支持网络参数大小为（Flash 容量-软件体积）
+
+构建对象
+~~~~~~~
+
+.. class:: KPU()
+
+-----------------------------------------
+
+
+    .. image:: /images/blocks/k210/36.png
+        :scale: 90 %
+
+    .. method:: KPU.load(path)
+
+    **描述：**
+    从flash中加载模型。加载后,返回 `kpu_net` 模型网络对象  。`path` 可以是模型在 flash 中的偏移大小,如 0xd00000 表示模型烧录在13M起始的地方 。
+
+    AI摄像头、1956 、人工智能交互实验箱均在flash里烧录一些常用的模型,如下:
+
+    ================    ===========
+    模型                  flash地址
+    ================    ===========
+    人脸追踪(yolo2)        0x300000
+    手写数字(分类器)        0x600000
+    20类(yolo2)           0x640000
+    ================    ===========
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/37.png
+        :scale: 90 %
+
+    .. method:: KPU.load(path)
+
+    **描述：**
+    从文件系统中加载模型。加载后,返回 `kpu_net` 模型网络对象  。`path` 可以是模型在文件系统中为文件名， 如 "/sd/xxx.kmodel"
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/38.png
+        :scale: 90 %
+
+    .. method:: KPU.init_yolo2(kpu_net, threshold, nms_value, anchor_num, anchor)
+
+    **描述：**
+    为yolo2网络模型传入初始化参数。
+
+    **参数：** 
+
+        - ``kpu_net`` -- `KPU.load()` 返回的模型网络对象
+        - ``threshold`` -- 概率阈值
+        - ``nms_value`` -- box_iou 门限
+        - ``anchor_num`` -- 锚点数
+        - ``anchor`` -- 锚点参数与模型参数一致
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/40.png
+        :scale: 90 %
+
+    .. method:: KPU.run_yolo2(kpu_net, image_t)
+
+    **描述：**
+    运行yolo2网络。如侦测到对象,函数会返回含侦测到对象的列表,无,则返回 `None` 。每个对象为一个字典类型的成员。返回如下:
+
+        >>> [{'classid': 14, 'objnum': 1, 'w': 302, 'index': 0, 'y': 5, 'x': 19, 'h': 240, 'value': 0.546819},{'classid': 14, 'objnum': 1, 'w': 232, 'index': 0, 'y': 38, 'x': 0, 'h': 216, 'value': 0.898214}]
+
+    **参数：** 
+
+    - ``kpu_net`` -- `KPU.load()` 返回的模型网络对象
+    - ``image_t`` -- 从 sensor 采集到的图像
+
+
+
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/43.png
+        :scale: 90 %
+
+    .. method:: KPU.forward( kpu_net, img)
+
+    **描述：**
+    计算已加载的神经网络网络模型。返回,模型运算的最终结果,为元组类型,可用于图像分类的模型应用。
+    
+    **参数：** 
+
+    - ``kpu_net`` -- `KPU.load()` 返回的模型网络对象
+    - ``img`` -- 从 sensor 采集到的图像
+
+
+
+
+
+
+
+    .. image:: /images/blocks/k210/39.png
+        :scale: 90 %
+
+    .. method:: KPU.deinit()
+
+    **描述：**
+    反初始化,释放模型资源。
+

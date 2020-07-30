@@ -27,7 +27,7 @@ author = 'LabPlus'
 # The short X.Y version
 
 # The full version, including alpha/beta/rc tags
-version = release = '0.1.0'
+version = release = '0.4.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -128,7 +128,7 @@ html_theme_options = {
 
 }
 html_scaled_image_link = False  # don't add link to scaled images
-html_logo = 'images/favicon.ico'
+html_logo = 'images/logo.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -220,4 +220,4 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-html_favicon = 'favicon.ico'
+html_favicon = 'logo_cover.png'
