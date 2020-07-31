@@ -10,7 +10,7 @@ AI摄像头例程
     .. image::  /images/blocks/AI_Camera/5.png
         :scale: 90 %
 
-    :download:`点击下载图形化示例</../examples/AI_camera/CameraShow.xml>`
+    :download:`点击下载图形化示例</../examples/AI_Camera/CameraShow.xml>`
 
 -----------------------------------------
 
@@ -23,7 +23,7 @@ AI摄像头例程
     .. image::  /images/blocks/AI_Camera/4.png
         :scale: 90 %
 
-    :download:`点击下载图形化示例</../examples/AI_camera/LCD_Image.xml>`
+    :download:`点击下载图形化示例</../examples/AI_Camera/LCD_Image.xml>`
 
 -----------------------------------------
 
@@ -36,7 +36,7 @@ AI摄像头例程
     .. image::  /images/blocks/AI_Camera/6.png
         :scale: 90 %
 
-    :download:`点击下载图形化示例</../examples/AI_camera/ColorTrace.xml>`
+    :download:`点击下载图形化示例</../examples/AI_Camera/ColorTrace.xml>`
 
 -----------------------------------------
 
@@ -48,7 +48,7 @@ AI摄像头例程
     .. image::  /images/blocks/AI_Camera/1.png
         :scale: 90 %
 
-    :download:`点击下载图形化示例</../examples/AI_camera/facedetect.xml>`
+    :download:`点击下载图形化示例</../examples/AI_Camera/facedetect.xml>`
 
 -----------------------------------------
 
@@ -60,7 +60,7 @@ AI摄像头例程
     .. image::  /images/blocks/AI_Camera/2.png
         :scale: 90 %
 
-    :download:`点击下载图形化示例</../examples/AI_camera/mnist.xml>`
+    :download:`点击下载图形化示例</../examples/AI_Camera/mnist.xml>`
     
 -----------------------------------------
 
@@ -72,6 +72,6 @@ AI摄像头例程
     .. image::  /images/blocks/AI_Camera/3.png
         :scale: 90 %
 
-    :download:`点击下载图形化示例</../examples/AI_camera/20class.xml>`
+    :download:`点击下载图形化示例</../examples/AI_Camera/20class.xml>`
     
 -----------------------------------------
