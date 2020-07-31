@@ -31,6 +31,18 @@
 
 
 
+**描述：** 保存图片并且加载显示
+    
+    .. image::  /images/blocks/AI_Box/7.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/AI_Box/SaveAndLoad.xml>`
+
+-----------------------------------------
+
+
+
+
 **描述：** 颜色追踪
     
     .. image::  /images/blocks/AI_Box/6.png

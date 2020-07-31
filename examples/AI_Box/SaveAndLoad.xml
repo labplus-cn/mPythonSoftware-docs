@@ -1,0 +1,78 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=",-hDvW1[x/FO61!h!(OX">img</variable>
+  </variables>
+  <block type="controls_repeat_forever" id="dqhfV|:scTHF3f.y[5n*" x="-562" y="113">
+    <statement name="DO">
+      <block type="variables_set" id="u;PerWis}]VNVoi=uq~?">
+        <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+        <value name="VALUE">
+          <block type="mpython_box_and_1956_sensor_camera_snapshot" id="@u=nPGlH|.d/`qkL|5TN"></block>
+        </value>
+        <next>
+          <block type="mpython_box_and_1956_lcd_display" id="]bN7+:xq=##]gv##w0Xg">
+            <value name="num1">
+              <block type="variables_get" id="?}|bDBafQHxV8+N_XyW2">
+                <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="%MmsHI9^D|g:/mzP{ZkN">
+                <value name="IF0">
+                  <block type="mpython_1956_button_is_pressed" id="WJymMw-0ls8eO{,,5mTi">
+                    <field name="button">a</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="mpython_box_and_1956_img_show_ectype" id="mJTWs[45H=tSa/*uMyl?">
+                    <value name="variables1">
+                      <block type="variables_get" id="oD@C}(RC$DV`%lRyGlsU">
+                        <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                      </block>
+                    </value>
+                    <value name="message">
+                      <shadow type="text" id="v)h%!=6w|2)v#HWBJq%x">
+                        <field name="TEXT">/sd/name.jpg</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="controls_flow_statements" id="t!3tQ#9dzSfeqJr9nlku">
+                        <field name="FLOW">BREAK</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="variables_set" id="#0qu3xB+v=RH@)=XR@JN">
+        <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+        <value name="VALUE">
+          <block type="mpython_box_and_1956_img_show_image_picture" id="%_Q?8*sKud?nccOR_fH;">
+            <value name="variables1">
+              <block type="mpython_box_and_1956_img_draw_image" id="X|?A18LO,oAo3;FbI]:Y"></block>
+            </value>
+            <value name="message">
+              <shadow type="text" id="$)QwN-_`yaFC+UWQmUNB">
+                <field name="TEXT">/sd/name.jpg</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="mpython_box_and_1956_lcd_display" id="gO,c@j?N|-aqsNPZ..iH">
+            <value name="num1">
+              <block type="variables_get" id="[SF|M-387eP{KX*km^yl">
+                <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

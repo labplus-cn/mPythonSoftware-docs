@@ -31,6 +31,18 @@ AI摄像头例程
 
 
 
+**描述：** 保存图片并且加载显示
+    
+    .. image::  /images/blocks/AI_Camera/7.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/AI_Camera/SaveAndLoad.xml>`
+
+-----------------------------------------
+
+
+
+
 **描述：** 颜色追踪
     
     .. image::  /images/blocks/AI_Camera/6.png

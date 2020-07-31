@@ -1,0 +1,126 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=",-hDvW1[x/FO61!h!(OX">img</variable>
+  </variables>
+  <block type="mpython_AIcamera_uart_init" id="D4u`lIpt;3hRmmCf4%vn" x="113" y="138">
+    <value name="tx">
+      <shadow type="uart_tx_pin" id="F_X/|S3ae)ft:*VmJ^#X">
+        <field name="uart_tx_pin">16</field>
+      </shadow>
+    </value>
+    <value name="rx">
+      <shadow type="uart_rx_pin" id="2k+t|wr-ec.2GP-CEq5)">
+        <field name="uart_rx_pin">15</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="controls_repeat_forever" id="{OMJzwGe:LBrp1RK$*/W">
+        <statement name="DO">
+          <block type="variables_set" id="+5M714Kl.OE+^X@;I?L7">
+            <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+            <value name="VALUE">
+              <block type="mpython_AIcamera_sensor_camera_snapshot" id="JB3:?*Uez%s[xYct5LQ]"></block>
+            </value>
+            <next>
+              <block type="mpython_AIcamera_lcd_display" id="DxSJR3Q:e%2X(,;T5FZw">
+                <value name="num1">
+                  <block type="variables_get" id="L69Qu`[x9|}A/EPn8z{^">
+                    <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="xt}^dFDC/pG|8+#*W@2G">
+                    <value name="IF0">
+                      <block type="mpython_AIcamera_peripheral_button_is_pressed" id="Z5[-iDSO(R!~tq,pPidf"></block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="mpython_AIcamera_img_show_ectype" id="ov!)^m]vL({,I;=3yOdL">
+                        <value name="variables1">
+                          <block type="variables_get" id="ZKweE6C]!9[.PV^V]0jA">
+                            <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                          </block>
+                        </value>
+                        <value name="message">
+                          <shadow type="text" id="^.nJffxtOK#BYt+ct^tm">
+                            <field name="TEXT">/sd/name.jpg</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="controls_flow_statements" id="BF-s%j-:@%w2*#k828*f">
+                            <field name="FLOW">BREAK</field>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="variables_set" id="/8cS#8D=H17t%2wP!CY$">
+            <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+            <value name="VALUE">
+              <block type="mpython_AIcamera_img_show_image_picture" id="*zfD%#9_$fyJD7Z+.~y.">
+                <value name="variables1">
+                  <block type="mpython_AIcamera_img_draw_image" id="]D`^QYMVB3;ngF]WE`I."></block>
+                </value>
+                <value name="message">
+                  <shadow type="text" id="gdNmP;3|9jC}wG3ztUbm">
+                    <field name="TEXT">/sd/Alice.jpg</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="mpython_AIcamera_lcd_display" id="GcgZ|rJKZ*?yF(`iW7@E">
+                <value name="num1">
+                  <block type="variables_get" id="erq4_StT-XtG[Dqo0X{*">
+                    <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="mpython_sleep_ms" id=".S)RMb;C{o}M$[[`KR0C">
+                    <field name="ms_us">s</field>
+                    <value name="duration">
+                      <shadow type="math_number" id="~dRJx_;e5omTJ}j*TMK-">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="/$_LML1s5s^U#_db=.*Z">
+                        <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                        <value name="VALUE">
+                          <block type="mpython_AIcamera_img_show_image_picture" id="j!JsFE!Go#])pD:o~:~}">
+                            <value name="variables1">
+                              <block type="mpython_AIcamera_img_draw_image" id="jOrFQS|!j{rI^Wk[rPer"></block>
+                            </value>
+                            <value name="message">
+                              <shadow type="text" id="NlPPb_OBeh/;ohpQqVul">
+                                <field name="TEXT">/sd/name.jpg</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="mpython_AIcamera_lcd_display" id="d}~7yGoHn`m3ae.T6YSF">
+                            <value name="num1">
+                              <block type="variables_get" id="il1CBjPK0@)pm9iQ|Al5">
+                                <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
