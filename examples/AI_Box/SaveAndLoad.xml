@@ -19,7 +19,7 @@
             <next>
               <block type="controls_if" id="%MmsHI9^D|g:/mzP{ZkN">
                 <value name="IF0">
-                  <block type="mpython_1956_button_is_pressed" id="WJymMw-0ls8eO{,,5mTi">
+                  <block type="mpython_button_is_pressed" id="fZ/f26PJ(e}zV/S)TLNB">
                     <field name="button">a</field>
                   </block>
                 </value>
