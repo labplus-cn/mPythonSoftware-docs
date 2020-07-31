@@ -1,0 +1,128 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="CK2DUjr}w~DCa-rE~eod">img</variable>
+  </variables>
+  <block type="controls_repeat_forever" id="IJE/J.SX(K)6xmL_(x}X" x="313" y="263">
+    <statement name="DO">
+      <block type="variables_set" id="C*,b3N{KW?ZTXj1kIQ5a">
+        <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+        <value name="VALUE">
+          <block type="mpython_box_and_1956_sensor_camera_snapshot" id="A%rMaG3Vtp-dI=@QyIHU"></block>
+        </value>
+        <next>
+          <block type="mpython_box_and_1956_img_trace_color" id="*p,s,mbztZJWfz:{5=Oa">
+            <value name="variables">
+              <block type="variables_get" id="4-GePid+PMckO8rp61{N">
+                <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+              </block>
+            </value>
+            <value name="lab">
+              <block type="lists_create_with" id="KwNuYavvy)=9!}?mmsJA">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="mpython_box_and_1956_img_trace_lab" id="ir4Y|*Mh=X{RBz17OZwE">
+                    <field name="choose">[0, 80, 15, 127, 15, 127]</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="mpython_box_and_1956_img_trace_lab" id="kQ.eqHWD#}K1e:P::^G0">
+                    <field name="choose">[0, 80, -70, -10, 0, 30]</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="mpython_box_and_1956_img_trace_lab" id="Qo%Vnx34N$lJ;k*d/bHG">
+                    <field name="choose">[0, 80, 23, 60, -88, -44]</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="area">
+              <shadow type="math_number" id="@`zJ*%W0^7UeHN|/)v.F">
+                <field name="NUM">20</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="controls_if" id="-9=4ns/uAZWp-3ZnJ]@-">
+                <value name="IF0">
+                  <block type="mpython_box_and_1956_img_trace_blobs" id="{kzBg|HfmG~/YN3;ih;H"></block>
+                </value>
+                <statement name="DO0">
+                  <block type="text_print" id="OJnJO/D/U!IJjekl|cTR" disabled="true">
+                    <value name="TEXT">
+                      <shadow type="text" id="`.l[RB/U#{$wV|@X0pnU">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="mpython_box_and_1956_img_trace_blobs_only" id="RM[s;!P|DIEK=`M+|E.E">
+                        <field name="select">pixels</field>
+                        <value name="num1">
+                          <shadow type="math_number" id="GFF:p71([OIOB%JQ6MSq">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="mpython_display_fill" id="3[ZT16IARz;|YCfE9fa^">
+                        <field name="display_fill">fill(0)</field>
+                        <next>
+                          <block type="mpython_display_DispChar_5lines" id="3xMH,12BLt*Waw7?7Zz!">
+                            <field name="TEXTMODE">1</field>
+                            <value name="DispChar_5lines">
+                              <shadow type="mpython_4_lines" id="cuGuM|P+9N[BOz=RhHEh">
+                                <field name="mpython_4_lines">2</field>
+                              </shadow>
+                            </value>
+                            <value name="message">
+                              <shadow type="text" id="Au|-yBbxSox{6G{pt=?O">
+                                <field name="TEXT">最大色块的像素为：</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="mpython_display_DispChar_5lines" id="HwiEBImeR_@,heA--}Rt">
+                                <field name="TEXTMODE">1</field>
+                                <value name="DispChar_5lines">
+                                  <shadow type="mpython_4_lines" id="+#?yjUY6R;`RICNZpwG:">
+                                    <field name="mpython_4_lines">3</field>
+                                  </shadow>
+                                </value>
+                                <value name="message">
+                                  <shadow type="text" id=",x@$,rh)t[T/`dHn)_8`">
+                                    <field name="TEXT">Hello, world!</field>
+                                  </shadow>
+                                  <block type="text_join" id="yb3|`s/V;{F$Wu^38r}!">
+                                    <mutation items="1"></mutation>
+                                    <value name="ADD0">
+                                      <block type="mpython_box_and_1956_img_trace_blobs_max" id="g2gJDm9e~pczeJk~J,wS">
+                                        <field name="select">pixels</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="mpython_display_Show" id=",%9LRy2LturHF(K1Bkyz"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="mpython_box_and_1956_lcd_display" id="aq%Up+rt.(ua@]`%Z(kX">
+                    <value name="num1">
+                      <block type="variables_get" id="kkMw#j^1MBos;gzwdWey">
+                        <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

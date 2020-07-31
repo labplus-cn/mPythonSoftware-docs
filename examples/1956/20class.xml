@@ -1,0 +1,294 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="~y1g)LQHSL7SMWs.S`FA">list_type</variable>
+    <variable id="D06WD~r+7(Oa)^,^t7=[">image</variable>
+  </variables>
+  <block type="mpython_box_and_1956_kpu_load" id="hQoK$3FwhQUx7Dk-Rg6%" x="-962" y="-787">
+    <field name="choose">0x640000</field>
+    <next>
+      <block type="mpython_box_and_1956_kpu_load_custom" id="~HEoyqsYiZnC(YB$-jEp" disabled="true">
+        <value name="message">
+          <shadow type="text" id=":tNr!vYexAp#`XEPpt$g">
+            <field name="TEXT">/sd/20class.kmodel</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_box_and_1956_kpu_initialize_yolo2" id="O,.P%pUOt1rK?$?(aYP|">
+            <value name="variables1">
+              <shadow type="math_number" id="GaxDPllK{bTmZsmJ#;jj">
+                <field name="NUM">0.5</field>
+              </shadow>
+            </value>
+            <value name="variables2">
+              <shadow type="math_number" id="hDdd_tRm:vcttxyo9h*I">
+                <field name="NUM">0.3</field>
+              </shadow>
+            </value>
+            <value name="variables3">
+              <shadow type="math_number" id="05.9aOj]CSF.cvfg|,0h">
+                <field name="NUM">5</field>
+              </shadow>
+            </value>
+            <value name="variables4">
+              <block type="mpython_box_and_1956_kpu_face_detect_anchor" id="#C-YbErE/koFsND)U],+">
+                <field name="choose">(1.08, 1.19, 3.42, 4.41, 6.63, 11.38, 9.42, 5.11, 16.62, 10.52)</field>
+              </block>
+            </value>
+            <next>
+              <block type="mpython_return_list" id="buQ@OGxA{C[k8s!OZd`@">
+                <value name="list_name">
+                  <block type="variables_get" id="*~G.Dk(_33Rh1pMsq;Oi">
+                    <field name="VAR" id="~y1g)LQHSL7SMWs.S`FA">list_type</field>
+                  </block>
+                </value>
+                <value name="list_items">
+                  <shadow type="text_list" id="u~is~MnWH71Ctl(|o3Ao">
+                    <field name="TEXT">'飞机','自行车','鸟','船','瓶子','公交车','汽车','猫','椅子','奶牛','餐桌','狗','屋子','摩托','人','盆栽','羊','沙发','火车','电视'</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_repeat_forever" id="k#LqjNufS72h1tP!7KAx">
+                    <statement name="DO">
+                      <block type="variables_set" id="!8)8qa;jf~`kxVF=-]*J">
+                        <field name="VAR" id="D06WD~r+7(Oa)^,^t7=[">image</field>
+                        <value name="VALUE">
+                          <block type="mpython_box_and_1956_sensor_camera_snapshot" id="q?_AiYY4YJX]3J6!WX#0"></block>
+                        </value>
+                        <next>
+                          <block type="mpython_box_and_1956_kpu_run_yolo2" id="[gPEv:z|9y0Z|a5bp_~p">
+                            <value name="variables1">
+                              <block type="variables_get" id="?;3B.17Re_}1g)L23U{^">
+                                <field name="VAR" id="D06WD~r+7(Oa)^,^t7=[">image</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_if" id="vrQo%,uu6fm9hmIBkMXM">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="tWTg=?x;`D,^Om%Rdu+Y">
+                                    <field name="OP">NEQ</field>
+                                    <value name="A">
+                                      <block type="mpython_box_and_1956_kpu_return_yolo2" id="EFj`YbiG~.G_`~]7DP`F"></block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_null" id="U^ZOwdOW#S][2N}b~4[p"></block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="mpython_box_and_1956_img_draw_rect" id="T(_!aw7_c.{p2?iImei~">
+                                    <field name="choose">False</field>
+                                    <value name="variables1">
+                                      <block type="variables_get" id="Dr6za@6|3^AnUB.Fvw*2">
+                                        <field name="VAR" id="D06WD~r+7(Oa)^,^t7=[">image</field>
+                                      </block>
+                                    </value>
+                                    <value name="num5">
+                                      <block type="mpython_box_and_1956_img_rgb" id="].OHOi12^7`Bk~KY(T.Q">
+                                        <value name="r">
+                                          <shadow type="math_number" id="T_pQc@i0}.c.XoKjc@P~">
+                                            <field name="NUM">255</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="g">
+                                          <shadow type="math_number" id="u#k^c/-h!^1}l/AMx}-9">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="b">
+                                          <shadow type="math_number" id="5F?htk0hC~FAFM?1$-WF">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="num1">
+                                      <shadow type="math_number" id="]j#vat??D/p0E/4`ESV2">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="8GK6b~|y-iG6EGwa]-8u">
+                                        <field name="select">x</field>
+                                        <value name="num1">
+                                          <shadow type="math_number" id="%jeC!YXiu_GFp1rLXF@G">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="num2">
+                                      <shadow type="math_number" id="{EWfhIG?s}y1Jv?[8nof">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="1]Ng=6p|6e|^~(+sam=!">
+                                        <field name="select">y</field>
+                                        <value name="num1">
+                                          <shadow type="math_number" id="%g0mk8%^:qF5b6:J}`C8">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="num3">
+                                      <shadow type="math_number" id="`pA`:]r;6p2Q?Xjan=17">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="n`|27[=Gs%b]q?v!#vEv">
+                                        <field name="select">w</field>
+                                        <value name="num1">
+                                          <shadow type="math_number" id="5Jv?xECrC^Af/#D+z2CA">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="num4">
+                                      <shadow type="math_number" id="@mRaqfi@CQNlt!D*!;Dq">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="oy3|M7dHTRfi`ydT_^Sq">
+                                        <field name="select">h</field>
+                                        <value name="num1">
+                                          <shadow type="math_number" id="^sNW)S}bC.IjB5OBk+|1">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="mpython_box_and_1956_img_DispChar" id="Yj4wW0`G3tNB,H=4BZyo">
+                                        <value name="variables1">
+                                          <block type="variables_get" id="IDjv~=uo`XSek44a43p#">
+                                            <field name="VAR" id="D06WD~r+7(Oa)^,^t7=[">image</field>
+                                          </block>
+                                        </value>
+                                        <value name="num3">
+                                          <block type="mpython_box_and_1956_img_list_color" id="l@ti_zW8rrG$Y+)3Avg+">
+                                            <field name="COLOUR">#ffff00</field>
+                                          </block>
+                                        </value>
+                                        <value name="num1">
+                                          <shadow type="math_number" id="eGc`WhPN{8B;I;36[Oqh">
+                                            <field name="NUM">100</field>
+                                          </shadow>
+                                          <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="uP6d)Syn|.0)}aDuXNQi">
+                                            <field name="select">x</field>
+                                            <value name="num1">
+                                              <shadow type="math_number" id="[?A9CPj8HlP_,2*ME/R-">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="num2">
+                                          <shadow type="math_number" id="45*391Kk)|I$sz%nDNr%">
+                                            <field name="NUM">100</field>
+                                          </shadow>
+                                          <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="za|HQ@r=k5^5!!Q;bq1/">
+                                            <field name="select">y</field>
+                                            <value name="num1">
+                                              <shadow type="math_number" id="}ef1.grjA{1.YbgmF-TV">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="message">
+                                          <shadow type="text" id="2^7uS:BjoAiar;OI);Z]">
+                                            <field name="TEXT">Hello, world!</field>
+                                          </shadow>
+                                          <block type="text_join" id="-w|p6*9KT*/RwmK/^:vD">
+                                            <mutation items="1"></mutation>
+                                            <value name="ADD0">
+                                              <block type="list_order_item" id=",:-U;1R)VNEO0z6nSuZe">
+                                                <field name="list_order">[</field>
+                                                <value name="list_name">
+                                                  <shadow type="text_list">
+                                                    <field name="TEXT"></field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="@3bQyh=Of%}ldr8xL[Mj">
+                                                    <field name="VAR" id="~y1g)LQHSL7SMWs.S`FA">list_type</field>
+                                                  </block>
+                                                </value>
+                                                <value name="list_order_item">
+                                                  <shadow type="math_number">
+                                                    <field name="NUM">0</field>
+                                                  </shadow>
+                                                  <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="fwVn/|O0)kP}usa@6Hwp">
+                                                    <field name="select">classid</field>
+                                                    <value name="num1">
+                                                      <shadow type="math_number" id="aD@PKp0axe*Zq*gL*MtM">
+                                                        <field name="NUM">0</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="text_print" id=")Tu+UAw~Sf*7|(h;gPQ@">
+                                            <value name="TEXT">
+                                              <shadow type="text" id=";uB*)WTem(DW$r=OeTFD">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                              <block type="text_join" id="z9kvyypx?NLs=1;tZ1c|">
+                                                <mutation items="1"></mutation>
+                                                <value name="ADD0">
+                                                  <block type="list_order_item" id="j4r/l6Bo6/^K20wHD8(7">
+                                                    <field name="list_order">[</field>
+                                                    <value name="list_name">
+                                                      <shadow type="text_list">
+                                                        <field name="TEXT"></field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="Vw6P8;I_KvyKlV:^A4ao">
+                                                        <field name="VAR" id="~y1g)LQHSL7SMWs.S`FA">list_type</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="list_order_item">
+                                                      <shadow type="math_number" id="s;0MWydeH2`|kWnvJcyv">
+                                                        <field name="NUM">0</field>
+                                                      </shadow>
+                                                      <block type="mpython_box_and_1956_kpu_acquire_yolo2" id="b(ac^Ae#g[G69:8~)Ee^">
+                                                        <field name="select">classid</field>
+                                                        <value name="num1">
+                                                          <shadow type="math_number" id="8~n#Qx0fLsMQ]/4ZBd{o">
+                                                            <field name="NUM">0</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="mpython_box_and_1956_lcd_display" id="cS3BU*DYu[xU0?T6(y*|">
+                                    <value name="num1">
+                                      <block type="variables_get" id="6qVa5JcNg+mA8q/8EI*H">
+                                        <field name="VAR" id="D06WD~r+7(Oa)^,^t7=[">image</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

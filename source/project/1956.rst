@@ -1,0 +1,77 @@
+1956例程
+===============
+
+
+
+
+
+**描述：** LCD屏显示前置后置摄像头画面
+    
+    .. image::  /images/blocks/1956/4.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/1956/CameraShow.xml>`
+
+-----------------------------------------
+
+
+
+
+
+**描述：** LCD屏显示画图
+    
+    .. image::  /images/blocks/1956/5.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/1956/LCD_Image.xml>`
+
+-----------------------------------------
+
+
+
+
+
+**描述：** 颜色追踪
+    
+    .. image::  /images/blocks/1956/6.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/1956/ColorTrace.xml>`
+
+-----------------------------------------
+
+
+
+
+**描述：** 人脸识别
+    
+    .. image::  /images/blocks/1956/1.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/1956/facedetect.xml>`
+
+-----------------------------------------
+
+
+
+
+**描述：** 手写数字
+    
+    .. image::  /images/blocks/1956/2.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/1956/mnist.xml>`
+    
+-----------------------------------------
+
+
+
+
+**描述：** 20类识别
+    
+    .. image::  /images/blocks/1956/3.png
+        :scale: 90 %
+
+    :download:`点击下载图形化示例</../examples/1956/20class.xml>`
+    
+-----------------------------------------

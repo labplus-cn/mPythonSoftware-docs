@@ -1,0 +1,478 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_AIcamera_uart_init" id="q6tz0s,A#Uku}gUa(j7N" x="37" y="-262">
+    <value name="tx">
+      <shadow type="uart_tx_pin" id="-xX/lfK1=su|;c^D9H5Z">
+        <field name="uart_tx_pin">16</field>
+      </shadow>
+    </value>
+    <value name="rx">
+      <shadow type="uart_rx_pin" id="52Y1GEZbO:$(HZEQYsaR">
+        <field name="uart_rx_pin">15</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_AIcamera_img_clear" id="fVPBr,[C:|GUy7e|3:lS">
+        <value name="variables1">
+          <block type="mpython_AIcamera_img_draw_image" id="iwerrk_oRo2KNW3P`hi)"></block>
+        </value>
+        <next>
+          <block type="mpython_AIcamera_img_DispChar" id="HP#?ZjfD!`$`xBlLjc!i" inline="true">
+            <value name="variables1">
+              <block type="mpython_AIcamera_img_draw_image" id="yMJX1,DRZavbrMV@MEs+"></block>
+            </value>
+            <value name="num3">
+              <shadow type="math_number" id="![iOdUx1G#i),].3n;Gi">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="mpython_AIcamera_img_rgb" id="262q(q;%m)tKg^B|w3ZM">
+                <value name="r">
+                  <shadow type="math_number" id="ntdT}DkHm.4_AcbeA#py">
+                    <field name="NUM">255</field>
+                  </shadow>
+                </value>
+                <value name="g">
+                  <shadow type="math_number" id="bE|WKfd0Zi}wAQai!,Gu">
+                    <field name="NUM">255</field>
+                  </shadow>
+                </value>
+                <value name="b">
+                  <shadow type="math_number" id="L2*Ug+8EOMg]oFzNRRP1">
+                    <field name="NUM">255</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="num1">
+              <shadow type="math_number" id="vLTgAR7i|=)?P_jPV8BT">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="num2">
+              <shadow type="math_number" id="0|O.%O/}I.pmPK*v8/xS">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="message">
+              <shadow type="text" id="KAI`l-!f#sAC)fO_Z6/%">
+                <field name="TEXT">Hello, world!</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="mpython_AIcamera_img_DispChar" id="%+-znf[g@7o3vt%~L6f[" inline="true">
+                <value name="variables1">
+                  <block type="mpython_AIcamera_img_draw_image" id="!AkqluKCQa/a+hv1Pjtu"></block>
+                </value>
+                <value name="num3">
+                  <shadow type="math_number" id="Uc5*_Qe?Dn;ufh#{gkUa">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="mpython_AIcamera_img_rgb" id="[XGlUm+pr+C40S}!9Tj.">
+                    <value name="r">
+                      <shadow type="math_number" id="D^mkQH_!Y4AtfZlM%X?9">
+                        <field name="NUM">255</field>
+                      </shadow>
+                    </value>
+                    <value name="g">
+                      <shadow type="math_number" id="z-UtN,CicvxkN-3L=FZK">
+                        <field name="NUM">255</field>
+                      </shadow>
+                    </value>
+                    <value name="b">
+                      <shadow type="math_number" id=".UMJ}Ux:0a]aqO8V+UHA">
+                        <field name="NUM">255</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="num1">
+                  <shadow type="math_number" id="}PT0cADQ8sn_.i1;MW(`">
+                    <field name="NUM">100</field>
+                  </shadow>
+                </value>
+                <value name="num2">
+                  <shadow type="math_number" id="fOCHeF?~Q+ssB6;ciWgj">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="message">
+                  <shadow type="text" id="G7X{t,KGH7%vmwN7prJ=">
+                    <field name="TEXT">你好，世界</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="mpython_AIcamera_img_draw_line" id="jL=.d~5q$5C]E{JEupkC" inline="true">
+                    <value name="variables1">
+                      <block type="mpython_AIcamera_img_draw_image" id="xU?21$shMicuR}#*luZ%"></block>
+                    </value>
+                    <value name="num5">
+                      <shadow type="math_number" id="^~29TeQvyRPYjR)z9ach">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="mpython_AIcamera_img_rgb" id=",#{PSxb9M~{ln@KkY5hX">
+                        <value name="r">
+                          <shadow type="math_number" id="+o.Bo|}AE1u5y_V!x9Y0">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="g">
+                          <shadow type="math_number" id="_C$|Va2ojeW=EG=F)AB~">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="b">
+                          <shadow type="math_number" id="Z%Ml#W:IEQ%:wnKNZoVC">
+                            <field name="NUM">255</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="num1">
+                      <shadow type="math_number" id="{$};uH7X^P6Gd$bpvnxl">
+                        <field name="NUM">50</field>
+                      </shadow>
+                    </value>
+                    <value name="num2">
+                      <shadow type="math_number" id="}0go=dspNAh1jF74$z}j">
+                        <field name="NUM">70</field>
+                      </shadow>
+                    </value>
+                    <value name="num3">
+                      <shadow type="math_number" id="7yNDq./$;t]j?ioXdjFE">
+                        <field name="NUM">80</field>
+                      </shadow>
+                    </value>
+                    <value name="num4">
+                      <shadow type="math_number" id="|i^N7|?E5Q!Zok2+hUkz">
+                        <field name="NUM">80</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="mpython_AIcamera_img_draw_rect" id="*heVbfZ{0uv0r`!?o2Eb" inline="true">
+                        <field name="choose">False</field>
+                        <value name="variables1">
+                          <block type="mpython_AIcamera_img_draw_image" id="[4.-@2OfGf/1yFQUE/X7"></block>
+                        </value>
+                        <value name="num5">
+                          <shadow type="math_number" id="h}8~2+Fj4k3Z9*BJ(~4W">
+                            <field name="NUM">0</field>
+                          </shadow>
+                          <block type="mpython_AIcamera_img_rgb" id="d{WR,[5F{{3pZ{WCAQm_">
+                            <value name="r">
+                              <shadow type="math_number" id="4fko0mC]h})G$;7yDcW(">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="g">
+                              <shadow type="math_number" id="e3qaJcWX=-slzv@Ke28G">
+                                <field name="NUM">255</field>
+                              </shadow>
+                            </value>
+                            <value name="b">
+                              <shadow type="math_number" id="2[,6P*XgQCAvW_=[R:yC">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="num1">
+                          <shadow type="math_number" id="qCQscTpj-D6Sh3k5F-RM">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                        <value name="num2">
+                          <shadow type="math_number" id="]!?RS-NT9LA!{l]n5`O7">
+                            <field name="NUM">16</field>
+                          </shadow>
+                        </value>
+                        <value name="num3">
+                          <shadow type="math_number" id="IYWRBqI6ZBSgraE#%b=h">
+                            <field name="NUM">30</field>
+                          </shadow>
+                        </value>
+                        <value name="num4">
+                          <shadow type="math_number" id="99OR:S0_(Lyl)k[}BPAv">
+                            <field name="NUM">30</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="mpython_AIcamera_img_draw_rect" id="/ZIXOkc@z0!0oij;jiQF" inline="true">
+                            <field name="choose">True</field>
+                            <value name="variables1">
+                              <block type="mpython_AIcamera_img_draw_image" id="{mbWETDfClPY^g{gCq-l"></block>
+                            </value>
+                            <value name="num5">
+                              <shadow type="math_number" id="T__W/86u)5S`[NcH3Q|S">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="mpython_AIcamera_img_rgb" id="s(7nA`16SFYC16iyU(}+">
+                                <value name="r">
+                                  <shadow type="math_number" id="=lXo1S]-cVju-{R:]^#8">
+                                    <field name="NUM">255</field>
+                                  </shadow>
+                                </value>
+                                <value name="g">
+                                  <shadow type="math_number" id="sDPx6`J?ar(R5?3.aM9z">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <value name="b">
+                                  <shadow type="math_number" id=".Z!|c/Fx09VmEgqr1`Eb">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="num1">
+                              <shadow type="math_number" id=":l^sNLmUX3WbWv[k:Njn">
+                                <field name="NUM">150</field>
+                              </shadow>
+                            </value>
+                            <value name="num2">
+                              <shadow type="math_number" id="LJYVexATUS_}p9bXh([2">
+                                <field name="NUM">16</field>
+                              </shadow>
+                            </value>
+                            <value name="num3">
+                              <shadow type="math_number" id="XEmM3*wFi5,5%$_d16}b">
+                                <field name="NUM">30</field>
+                              </shadow>
+                            </value>
+                            <value name="num4">
+                              <shadow type="math_number" id=",XNB1GHgdfIM|9gpZdLa">
+                                <field name="NUM">30</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="mpython_AIcamera_img_draw_circle" id="WJ.oOvQ}2kO=+.(9:Pw0" inline="true">
+                                <field name="choose">False</field>
+                                <value name="variables1">
+                                  <block type="mpython_AIcamera_img_draw_image" id="D=YKI#TtwJ=.IuWLf,{6"></block>
+                                </value>
+                                <value name="num4">
+                                  <shadow type="math_number" id="m-T7{R!mU@Gcsx0o_Gsh">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="mpython_AIcamera_img_rgb" id="0G;s;C$!v9VNbJ*UkFsa">
+                                    <value name="r">
+                                      <shadow type="math_number" id="GZj~2Oz7i%z)nxXgc|(f">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="g">
+                                      <shadow type="math_number" id=";@}wOi}|UA9]3S6dY1hC">
+                                        <field name="NUM">255</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="b">
+                                      <shadow type="math_number" id="YYkQ(|bpBjD_j7WR6v4P">
+                                        <field name="NUM">255</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="num1">
+                                  <shadow type="math_number" id="5ui-9bYx;16v$rAc=W4(">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                                <value name="num2">
+                                  <shadow type="math_number" id="Zp.:2t5jk5SOAh1`XMM,">
+                                    <field name="NUM">30</field>
+                                  </shadow>
+                                </value>
+                                <value name="num3">
+                                  <shadow type="math_number" id="=bh$F.)8/kZ5L.LfF9~h">
+                                    <field name="NUM">6</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="mpython_AIcamera_img_draw_circle" id="io=6Y~R6kZ:)Hp.er1XW" inline="true">
+                                    <field name="choose">True</field>
+                                    <value name="variables1">
+                                      <block type="mpython_AIcamera_img_draw_image" id="Ws?er.Yqdi1pjqYf[ujX"></block>
+                                    </value>
+                                    <value name="num4">
+                                      <shadow type="math_number" id="FjMT!6+Pvw[a[9^d9B`J">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="mpython_AIcamera_img_rgb" id="CWN)[9@}*RK@]G`%uM9V">
+                                        <value name="r">
+                                          <shadow type="math_number" id="#W=emdRJSFA*(4I[tXd/">
+                                            <field name="NUM">255</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="g">
+                                          <shadow type="math_number" id="NtoX*7ZgSwV(.5=~)cxa">
+                                            <field name="NUM">0</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="b">
+                                          <shadow type="math_number" id="+1ud(tPXRTxnl(x%,vmf">
+                                            <field name="NUM">255</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="num1">
+                                      <shadow type="math_number" id="gR.cU99iwnMJIyRCwUAn">
+                                        <field name="NUM">150</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="num2">
+                                      <shadow type="math_number" id="uiDjssgD|@l:@MXMAK0u">
+                                        <field name="NUM">30</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="num3">
+                                      <shadow type="math_number" id="vLJvn?eZ9eL^zdT7#MiW">
+                                        <field name="NUM">6</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="mpython_AIcamera_img_draw_ten_string" id="3c)u_VDAzDN*ON$/IKyV" inline="true">
+                                        <value name="variables1">
+                                          <block type="mpython_AIcamera_img_draw_image" id="LasyvN8L(En3vzNkPD6c"></block>
+                                        </value>
+                                        <value name="r">
+                                          <shadow type="math_number" id="w~f?mL$o{^8+oRHBA_N^">
+                                            <field name="NUM">255</field>
+                                          </shadow>
+                                          <block type="mpython_AIcamera_img_rgb" id="^O1{.jZBEl_.TSw5iIy-">
+                                            <value name="r">
+                                              <shadow type="math_number" id="2210BMsKFURS?`15+iO8">
+                                                <field name="NUM">255</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="g">
+                                              <shadow type="math_number" id="eRT.rW#ebOm!bac(a.KW">
+                                                <field name="NUM">255</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="b">
+                                              <shadow type="math_number" id="Ure:5X~)^CFNNa5R]2ZK">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="x">
+                                          <shadow type="math_number" id="ts81Yz.mZa)k[wg!y0-m">
+                                            <field name="NUM">110</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="y">
+                                          <shadow type="math_number" id="gXYYG$(T?Yp:+^Rh6QzG">
+                                            <field name="NUM">70</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="size">
+                                          <shadow type="math_number" id="YbaV8N_Pw]uaX4A4=GA^">
+                                            <field name="NUM">10</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="mpython_AIcamera_img_draw_arrows" id="qy/+RwjZ2m@skDt9dDWi" inline="true">
+                                            <value name="variables1">
+                                              <block type="mpython_AIcamera_img_draw_image" id="+#g6KyA9`oD!XEnE2W8`"></block>
+                                            </value>
+                                            <value name="r">
+                                              <shadow type="math_number" id=";afzqW8nbQO_KEES}^Zy">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                              <block type="mpython_AIcamera_img_rgb" id="63b2C4jNL$,MjPxQA0=o">
+                                                <value name="r">
+                                                  <shadow type="math_number" id="}/a~x$MdQD_)7E%|xX3w">
+                                                    <field name="NUM">255</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="g">
+                                                  <shadow type="math_number" id="e=4Fig+p=zn+JMf1`_8Y">
+                                                    <field name="NUM">255</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="b">
+                                                  <shadow type="math_number" id="=X!nuo*zFACK:H$iS$p}">
+                                                    <field name="NUM">255</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="x">
+                                              <shadow type="math_number" id="TzTCHGM8V7/j!Vr|A2GG">
+                                                <field name="NUM">160</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="y">
+                                              <shadow type="math_number" id="$_{x+1;^+`,NQ`Pl.o_=">
+                                                <field name="NUM">120</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="w">
+                                              <shadow type="math_number" id="LRhQ*c_{(?|HM0@uNC1:">
+                                                <field name="NUM">16</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="h">
+                                              <shadow type="math_number" id="X1oiC+icE-W2+@D=|I;*">
+                                                <field name="NUM">20</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="mpython_AIcamera_img_draw_image_image" id="}3|n|{2XXWBr1oveZ46H" inline="true">
+                                                <value name="variables1">
+                                                  <block type="mpython_AIcamera_img_draw_image" id="+u-$A#+^_(ct)n!p7`zR"></block>
+                                                </value>
+                                                <value name="num1">
+                                                  <block type="mpython_AIcamera_sensor_camera_snapshot" id="iaTE?BplirnI.Mk@=!Cq"></block>
+                                                </value>
+                                                <value name="num2">
+                                                  <shadow type="math_number" id="`qYs.9HS).i2k8o/[,*u">
+                                                    <field name="NUM">170</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="num3">
+                                                  <shadow type="math_number" id="m+[`6BKbrSK2W~^P2uGc">
+                                                    <field name="NUM">80</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="num4">
+                                                  <shadow type="math_number" id="z.l7tINX3$+Pv%*@@gG:">
+                                                    <field name="NUM">0.2</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="num5">
+                                                  <shadow type="math_number" id="F(`Nm?[@BVe)4I4+rNyA">
+                                                    <field name="NUM">0.2</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="mpython_AIcamera_lcd_display" id="6-}ip3x33dZ~Uy%m_4s/">
+                                                    <value name="num1">
+                                                      <block type="mpython_AIcamera_img_draw_image" id="9{ZA(wD1bosLIIe0LdV="></block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

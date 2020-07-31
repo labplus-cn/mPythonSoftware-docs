@@ -1,0 +1,176 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=",-hDvW1[x/FO61!h!(OX">img</variable>
+  </variables>
+  <block type="mpython_box_and_1956_sensor_camera_initialize" id="+Dx_x6kmkYe|0K8Jksq^" x="-863" y="113">
+    <next>
+      <block type="mpython_box_and_1956_sensor_set_pixformat" id="FW)=g-Zj]~%r^@SQyCu5">
+        <field name="enable">QVGA</field>
+        <next>
+          <block type="mpython_box_and_1956_sensor_set_framesize" id="}`Q[$h+:Z/2JYMDi2_hk">
+            <field name="enable">RGB565</field>
+            <next>
+              <block type="controls_repeat_forever" id="dqhfV|:scTHF3f.y[5n*">
+                <statement name="DO">
+                  <block type="variables_set" id="u;PerWis}]VNVoi=uq~?">
+                    <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                    <value name="VALUE">
+                      <block type="mpython_box_and_1956_sensor_camera_snapshot" id="@u=nPGlH|.d/`qkL|5TN"></block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id="hYRg}~DVT{O%nEMOfJ4g">
+                        <value name="IF0">
+                          <block type="mpython_1956_button_is_pressed" id="RI$)VwpeY~|zlxVuHyj*">
+                            <field name="button">a</field>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="mpython_box_and_1956_sensor_camera_hmirror" id="GhcH7@gjPgI_l1j)_Q`r">
+                            <field name="camera_choose">hmirror</field>
+                            <field name="choose">0</field>
+                            <next>
+                              <block type="mpython_box_and_1956_sensor_camera_hmirror" id=":*aEXQ.(BOJnS~`[vV@y">
+                                <field name="camera_choose">vflip</field>
+                                <field name="choose">1</field>
+                                <next>
+                                  <block type="mpython_box_and_1956_img_DispChar" id="iEdm}x=7}sZp,3@B:*@9" inline="true">
+                                    <value name="variables1">
+                                      <block type="variables_get" id="QJ!b~PM.L_*Zv_Zv6HIC">
+                                        <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                                      </block>
+                                    </value>
+                                    <value name="num3">
+                                      <block type="mpython_box_and_1956_img_list_color" id="*Cs$j*H`_Ix8f38OjjPj">
+                                        <field name="COLOUR">#ffffff</field>
+                                      </block>
+                                    </value>
+                                    <value name="num1">
+                                      <shadow type="math_number" id="hSEcEXZt2yq6#S:L1%Uc">
+                                        <field name="NUM">100</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="num2">
+                                      <shadow type="math_number" id="#9{*ra+hR8Hk9amfcwpY">
+                                        <field name="NUM">100</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="message">
+                                      <shadow type="text" id="bCKapi(pv^wnVm+/$$Zu">
+                                        <field name="TEXT">前置</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="mpython_box_and_1956_lcd_display" id="]bN7+:xq=##]gv##w0Xg">
+                                        <value name="num1">
+                                          <block type="variables_get" id="?}|bDBafQHxV8+N_XyW2">
+                                            <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="mpython_sleep_ms" id="Bn2{AD![WWb-=G^%=v~w">
+                                            <field name="ms_us">s</field>
+                                            <value name="duration">
+                                              <shadow type="math_number" id="iYtiea(jR7m}F[e+R/wk">
+                                                <field name="NUM">2</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="zviI4usYoeK#PT#_LUSE">
+                            <value name="IF0">
+                              <block type="mpython_1956_button_is_pressed" id="(k%)QUgS=4j@piSJY1Ul">
+                                <field name="button">b</field>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="mpython_box_and_1956_sensor_camera_hmirror" id="E,3.[LVcq?JZ]0aZ];yN">
+                                <field name="camera_choose">hmirror</field>
+                                <field name="choose">0</field>
+                                <next>
+                                  <block type="mpython_box_and_1956_sensor_camera_hmirror" id="l6ULeYZ5hd/ogf8~`??]">
+                                    <field name="camera_choose">vflip</field>
+                                    <field name="choose">0</field>
+                                    <next>
+                                      <block type="mpython_box_and_1956_img_DispChar" id="T6C43XMs,p*tG0u^y#2E" inline="true">
+                                        <value name="variables1">
+                                          <block type="variables_get" id="x{RL5M4Qrgv+FNE%~Phk">
+                                            <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                                          </block>
+                                        </value>
+                                        <value name="num3">
+                                          <block type="mpython_box_and_1956_img_list_color" id="7I~!F{L%Y$vYhJe)sJCp">
+                                            <field name="COLOUR">#ffffff</field>
+                                          </block>
+                                        </value>
+                                        <value name="num1">
+                                          <shadow type="math_number" id=":1G+le:5YQ?Kixme~z$7">
+                                            <field name="NUM">100</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="num2">
+                                          <shadow type="math_number" id="Ff2cD626eMX/n6i(WJ3G">
+                                            <field name="NUM">100</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="message">
+                                          <shadow type="text" id="y-mVT.o%BH5Tf/D~kul1">
+                                            <field name="TEXT">后置</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="mpython_box_and_1956_lcd_display" id="5e)LT7S+5Md(e@oMr-y]">
+                                            <value name="num1">
+                                              <block type="variables_get" id="Z+_|;Qi`=AS-;zB8DSQA">
+                                                <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="mpython_sleep_ms" id="B/;VhR-QEyMzd^k;X}K5">
+                                                <field name="ms_us">s</field>
+                                                <value name="duration">
+                                                  <shadow type="math_number" id="`J`Z@QI4*aaQ1Lye!bqy">
+                                                    <field name="NUM">2</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="mpython_box_and_1956_lcd_display" id="h~v[*SEk]:[b;6TIE1%7">
+                                <value name="num1">
+                                  <block type="variables_get" id="17o/ui,128._w~QT1(Hy">
+                                    <field name="VAR" id=",-hDvW1[x/FO61!h!(OX">img</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

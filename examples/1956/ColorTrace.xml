@@ -1,0 +1,133 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="CK2DUjr}w~DCa-rE~eod">img</variable>
+  </variables>
+  <block type="controls_repeat_forever" id="IJE/J.SX(K)6xmL_(x}X" x="263" y="263">
+    <statement name="DO">
+      <block type="variables_set" id="C*,b3N{KW?ZTXj1kIQ5a">
+        <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+        <value name="VALUE">
+          <block type="mpython_box_and_1956_sensor_camera_snapshot" id="A%rMaG3Vtp-dI=@QyIHU"></block>
+        </value>
+        <next>
+          <block type="mpython_box_and_1956_img_trace_color" id="*p,s,mbztZJWfz:{5=Oa">
+            <value name="variables">
+              <block type="variables_get" id="4-GePid+PMckO8rp61{N">
+                <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+              </block>
+            </value>
+            <value name="lab">
+              <block type="lists_create_with" id=".]l9K=x%$}fh^FhC~1o2">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="mpython_box_and_1956_img_trace_lab" id="ir4Y|*Mh=X{RBz17OZwE">
+                    <field name="choose">[0, 80, 15, 127, 15, 127]</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="mpython_box_and_1956_img_trace_lab" id="M(W%lO9FqXfDk_`lZVo5">
+                    <field name="choose">[0, 80, -70, -10, 0, 30]</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="mpython_box_and_1956_img_trace_lab" id="/8H^tA)C(S[1}^oYqKX}">
+                    <field name="choose">[0, 80, 23, 60, -88, -44]</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="area">
+              <shadow type="math_number" id="@`zJ*%W0^7UeHN|/)v.F">
+                <field name="NUM">20</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="controls_if" id="-9=4ns/uAZWp-3ZnJ]@-">
+                <value name="IF0">
+                  <block type="mpython_box_and_1956_img_trace_blobs" id="{kzBg|HfmG~/YN3;ih;H"></block>
+                </value>
+                <statement name="DO0">
+                  <block type="mpython_box_and_1956_img_DispChar" id="J_hLT1I{*IDf;yAKG6Q@">
+                    <value name="variables1">
+                      <block type="variables_get" id="10e+xsm6kmxQ4@?mBlkv">
+                        <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+                      </block>
+                    </value>
+                    <value name="num3">
+                      <block type="mpython_box_and_1956_img_rgb" id="|RO@7}Dj?%@^]OjT(*]U">
+                        <value name="r">
+                          <shadow type="math_number" id="Y5|KBFgnD!8MB.Ez[`{G">
+                            <field name="NUM">255</field>
+                          </shadow>
+                        </value>
+                        <value name="g">
+                          <shadow type="math_number" id="3pSvg_=fGXV.MdE`$AMx">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="b">
+                          <shadow type="math_number" id="]JyGMfGh]?Y7S87XD*Bt">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="num1">
+                      <shadow type="math_number" id="x*;5X3/+%8pyu.e[37x}">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <value name="num2">
+                      <shadow type="math_number" id="33lP7=6{91-l+it)w@0?">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <value name="message">
+                      <shadow type="text" id="}srG%;`]*Fp-i6IsmXX5">
+                        <field name="TEXT">Hello, world!</field>
+                      </shadow>
+                      <block type="text_join" id="1@@i*N``NAR8uCqEALcy">
+                        <mutation items="1"></mutation>
+                        <value name="ADD0">
+                          <block type="mpython_box_and_1956_img_trace_blobs_max" id="SFjB#Vv/1i@r;obqw1=x">
+                            <field name="select">pixels</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="text_print" id="?2%$uh`5IW^o]Tv!_J,N">
+                        <value name="TEXT">
+                          <shadow type="text" id="Xz2r_{ET#H4BAD!1-vdF">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="text_join" id="yb3|`s/V;{F$Wu^38r}!">
+                            <mutation items="1"></mutation>
+                            <value name="ADD0">
+                              <block type="mpython_box_and_1956_img_trace_blobs_max" id="g2gJDm9e~pczeJk~J,wS">
+                                <field name="select">pixels</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="mpython_box_and_1956_lcd_display" id="aq%Up+rt.(ua@]`%Z(kX">
+                    <value name="num1">
+                      <block type="variables_get" id="kkMw#j^1MBos;gzwdWey">
+                        <field name="VAR" id="CK2DUjr}w~DCa-rE~eod">img</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

@@ -1,0 +1,26 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_AIcamera_uart_init" id="wKzy?o@(Q!s0Ge1)6X@h" x="63" y="-487">
+    <value name="tx">
+      <shadow type="uart_tx_pin" id="o{0axq=d,mp1*AmqK=JP">
+        <field name="uart_tx_pin">16</field>
+      </shadow>
+    </value>
+    <value name="rx">
+      <shadow type="uart_rx_pin" id="*i5@)D7+f%/vb9Q3!5]m">
+        <field name="uart_rx_pin">15</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="controls_repeat_forever" id="Ml-F-f#6)q;Vt[6Ubrv]">
+        <statement name="DO">
+          <block type="mpython_AIcamera_lcd_display" id="^,egl7XehYL?tiV`[4Rv">
+            <value name="num1">
+              <block type="mpython_AIcamera_sensor_camera_snapshot" id="v/0_JQFx]Ajg3J5SZ|Zx"></block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

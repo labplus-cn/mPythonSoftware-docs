@@ -1,0 +1,39 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="controls_repeat_forever" id="G^0qH.h|M(vZ9d^AI9V]" x="-887" y="-662">
+    <statement name="DO">
+      <block type="mpython_box_and_1956_lcd_display" id="~1SieOQghL#jCU3cN=Y:">
+        <value name="num1">
+          <block type="mpython_box_and_1956_sensor_camera_snapshot" id="$:j$6m}a8t-+S$FfHDNl"></block>
+        </value>
+        <next>
+          <block type="controls_if" id="DP+WYB1BAiw}1v]U_xZ)">
+            <value name="IF0">
+              <block type="mpython_button_is_pressed" id="xfKlX1afr9MAgeK`jFX@">
+                <field name="button">a</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="mpythonbox_camera_led" id="tYCSDhw]LxL,edu2V1rr">
+                <field name="select">on</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="(bJor1j.2M%e6Q#^)jQk">
+                <value name="IF0">
+                  <block type="mpython_button_is_pressed" id="AHy/zJM]lA0LQ!t#L7oe">
+                    <field name="button">b</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="mpythonbox_camera_led" id="%l~a(qT$~mQ7r_JO2U.H">
+                    <field name="select">off</field>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
