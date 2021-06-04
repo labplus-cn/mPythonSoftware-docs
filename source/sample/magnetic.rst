@@ -16,7 +16,8 @@
 
 5.2 mPython绘图区绘图
 -------------------------
-
+示例
+^^^^^
 **在绘图区持续打印磁场强度，列表标题为Magnetic field strength**
 
 .. image:: /sample/image/5.2.png
