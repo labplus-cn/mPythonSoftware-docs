@@ -3,7 +3,7 @@
 
 
 oled.DispChar()
------------
+----------------
 
 **描述：** oled屏显示文本
 
@@ -26,7 +26,7 @@ oled.DispChar(s, x, y, mode=TextMode.normal)
 
 
 oled.show()
-----------
+-----------
 
 **描述：** 将缓存发送至oled显示。
 
@@ -72,7 +72,7 @@ oled.fill(c)
 
 
 oled.invert()
--------------
+--------------
 
 **描述：**  翻转像素点,设置黑底、白底。
 
@@ -136,7 +136,7 @@ oled.circle(x, y, radius, c)
 
 
 oled.fill_circle()
--------------
+-------------------
 
 **描述：**  绘制实心圆。
 
@@ -161,7 +161,7 @@ oled.fill_circle(x, y, radius, c)
 
 
 oled.triangle()
--------------
+----------------
 
 **描述：**  绘制空心三角形。
 
@@ -187,7 +187,7 @@ oled.triangle(x0, y0, x1, y1, x2, y2, c)
 
 
 oled.fill_triangle()
--------------
+----------------------
 
 **描述：**  绘制实心三角形。
 
@@ -209,7 +209,7 @@ oled.fill_triangle(x0, y0, x1, y1, x2, y2, c)
 .. image:: /images/blocks/oled/example/fill_triangle.png
     :scale: 80 %
 
-:download:`点击下载图形化示例</../examples/oled/oled_fill_triangle.xml>`
+.. :download:`点击下载图形化示例</../examples/oled/oled_fill_triangle.xml>`
 
 
 oled.hline()
@@ -305,7 +305,7 @@ oled.rect(x, y, w, h, c)
 
 
 oled.fill_rect()
--------------
+----------------
 
 **描述：**  绘制实心矩形
 
@@ -330,7 +330,7 @@ oled.fill_rect(x, y, w, h, c)
 
 
 oled.RoundRect()
--------------
+-----------------
 
 **描述：**  绘制弧角矩形边框
 
@@ -356,7 +356,7 @@ oled.RoundRect(x, y, w, h, r, c)
 
 
 oled.Bitmap()
--------------
+--------------
 
 **描述：**  绘制bitmap图案
 
@@ -383,7 +383,7 @@ oled.Bitmap(x, y, bitmap, w, h, c)
 
 
 UI.ProgressBar()
--------------
+-----------------
 
 **描述：**  绘制进度条
 

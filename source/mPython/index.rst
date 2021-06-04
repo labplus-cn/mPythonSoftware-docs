@@ -1,5 +1,7 @@
+.. _mPython_index:
+
 mPython 使用说明
-==========
+================
 
 
 .. toctree::
