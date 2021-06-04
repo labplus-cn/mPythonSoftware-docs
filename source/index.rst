@@ -21,9 +21,11 @@
 
    mPython/index.rst
    掌控板.rst
+   sample/index.rst
    blocks/index.rst
    extensions/index.rst
    project/index.rst
+   
 
 
 

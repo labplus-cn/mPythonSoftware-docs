@@ -21,13 +21,13 @@ import shlex
 # -- Project information -----------------------------------------------------
 
 project = u'mPython 帮助文档'
-copyright = '2019, LabPlus'
+copyright = '2021, LabPlus'
 author = 'LabPlus'
 
 # The short X.Y version
 
 # The full version, including alpha/beta/rc tags
-version = release = '0.4.1'
+version = release = '0.5.4'
 
 
 # -- General configuration ---------------------------------------------------

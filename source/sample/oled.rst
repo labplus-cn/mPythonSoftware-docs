@@ -1,6 +1,6 @@
 
 1.OLED显示
-==========
+===========
 
 1.1文字显示
 ------------
@@ -21,7 +21,7 @@
 
 3. OLED显示生效
 
-:download:`点击下载1.1文字显示图形化示例</sample/example/1.1.mxml>`
+:download:`点击下载示例</sample/example/1.1.mxml>`
 
 1.2图形显示
 -----------
@@ -42,7 +42,7 @@
 
 3. OLED显示生效
 
-:download:`点击下载1.2图形显示图形化示例</sample/example/1.2.mxml>`
+:download:`点击下载示例</sample/example/1.2.mxml>`
 
 1.3交互式图像显示（AB键，金手指，三轴加速度计）
 -----------------------------------------------
@@ -61,7 +61,7 @@
 
 3. 交替按下A、B实现OLDE屏图案交替，模拟心跳的样子
 
-:download:`点击下载1.3交互式图像显示示例1</sample/example/1.3A.mxml>`
+:download:`点击下载示示例</sample/example/1.3A.mxml>`
 
 
 示例2
@@ -77,7 +77,7 @@
 
 2. 显示生效
 
-:download:`点击下载1.3交互式图像显示示例2</sample/example/1.3B.mxml>`
+:download:`点击下载示例</sample/example/1.3B.mxml>`
 
 
 示例3
@@ -93,7 +93,7 @@
 
 2. 显示生效
 
-:download:`点击下载1.3交互式图像显示示例3</sample/example/1.3C.mxml>`
+:download:`点击下载示例</sample/example/1.3C.mxml>`
 
 
 1.4动画、滚动字幕
@@ -106,9 +106,9 @@
 .. image:: /sample/image/1.4.png
    :scale: 100 %
 
-1. 掌控版OLED分辨率128*64，使用一个变量a代表文字显示在y轴的位置
+1. 掌控板OLED分辨率128*64，使用一个变量a代表文字显示在y轴的位置
    
 
 2. 使用循环使OLED文字从OLED底部运动到顶部，每次循环变量a减一
 
-:download:`点击下载1.3交互式图像显示示例3</sample/example/1.4.mxml>`
+:download:`点击下载示例</sample/example/1.4.mxml>`

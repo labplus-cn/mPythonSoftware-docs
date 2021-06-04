@@ -22,4 +22,9 @@
 .. image:: /sample/image/4.2.png
    :scale: 100 %
 
+绘图效果:
+
+.. image:: /sample/image/4.2.1.png
+   :scale: 100 %
+
 :download:`点击下载示例</sample/example/4.2.mxml>`

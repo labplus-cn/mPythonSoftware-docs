@@ -47,3 +47,7 @@
     :width: 1000px
 
 :download:`点击下载示例</sample/example/2.2C.mxml>`
+
+.. Attention::
+
+   适用于掌控版2.0版本
