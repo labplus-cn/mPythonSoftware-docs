@@ -1,0 +1,60 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="-uzO4gd,llUJ-dze5%OU" x="13" y="13">
+    <value name="ssid">
+      <shadow type="text" id="^M#N|LfgD,#r47V~8)-6">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id="4~%-@5mCH1Kwd//n27E4">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="mpython2_button_event" id="DjLpa8gerEsT{-I6KhKT" x="13" y="88">
+    <field name="BUTTON">a</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_audio_start_recording" id="PZVoHJPccOyl{6]1Rlo,">
+        <value name="volume">
+          <shadow type="math_number" id="[Hx@Bg+7CFWFY@S0dk1r">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_audio_discern_recording" id="V*0w3I^3/O|90)9q?_.a">
+            <value name="variables">
+              <block type="mpython_audio_recording_result" id="5~Q.{u3k/%ZTnJNl!P4@"></block>
+            </value>
+            <next>
+              <block type="mpython_display_fill" id="2.Baz07r?ike?^GKTADV">
+                <field name="display_fill">fill(0)</field>
+                <next>
+                  <block type="mpython_display_DispChar_5lines" id="E}{yC-e-iJ`Ol~DF5cLU">
+                    <field name="TEXTMODE">1</field>
+                    <field name="AUTORETURN">False</field>
+                    <value name="DispChar_5lines">
+                      <shadow type="mpython_4_lines" id="X-HN$xEoTXtr?=r~1sF*">
+                        <field name="mpython_4_lines">1</field>
+                      </shadow>
+                    </value>
+                    <value name="message">
+                      <shadow type="text" id="q=ImG8FPL2f$}A!:#[b(">
+                        <field name="TEXT">Hello, world!</field>
+                      </shadow>
+                      <block type="mpython_audio_discern_recording_result" id="/x()3?:vofE+0KJT54zS"></block>
+                    </value>
+                    <next>
+                      <block type="mpython_display_Show" id="kM?]?rC|k]D1Z=[HW#D_"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

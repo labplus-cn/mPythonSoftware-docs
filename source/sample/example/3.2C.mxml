@@ -1,0 +1,72 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_accelerometer_event" id="rZQP!3B[G6sAkAD!W6rx" x="13" y="13">
+    <field name="ACTION">tilt_up</field>
+    <statement name="DO">
+      <block type="mpython_set_rgb_list_color" id=";ZsKO}srtJ{J96Cm|}FF">
+        <field name="COLOUR">#ff0000</field>
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="*K^(a4D/QX9$QL*9!K|Z">
+            <field name="rgb_list">-1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_accelerometer_event" id="EvT#uG[73bZnITdS-`)}" x="13" y="113">
+    <field name="ACTION">tilt_down</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="1[MIrf,stCZ_}|-mZhSm">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="L9d6q)tIZNCk9%=Efsjn">
+            <field name="rgb_list">-1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_accelerometer_event" id="ZEc~s`EwzJamSlbS1q/R" x="13" y="213">
+    <field name="ACTION">tilt_left</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="h;a/jO5S_#gTP1/^MZi*">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id=".V^jQ5FXlWSfVadWV*}-">
+            <field name="rgb_list">-1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_set_rgb_list_color" id="i1q{oJMM))q*=%-o:J8K">
+            <field name="COLOUR">#ff0000</field>
+            <value name="num">
+              <shadow type="mpython_rgb_list" id="7QQ8I*m=}e@R*N:PhHGa">
+                <field name="rgb_list">0</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_accelerometer_event" id="+v/Q%~ncmpg_S-tR0$Hz" x="13" y="363">
+    <field name="ACTION">tilt_right</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="vnz%u75Y8=,$uxT|0?s|">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="TyCFXXJef88m@?X@Hco:">
+            <field name="rgb_list">-1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_set_rgb_list_color" id=":csOmI[EUm,nw;WDVyG@">
+            <field name="COLOUR">#ff0000</field>
+            <value name="num">
+              <shadow type="mpython_rgb_list" id="ae/xWy!RMED%k*S+WAQi">
+                <field name="rgb_list">2</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

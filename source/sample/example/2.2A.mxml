@@ -1,0 +1,30 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_button_event" id="s)UB35fx/s_D^AEt5YV7" x="13" y="13">
+    <field name="BUTTON">a</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_music_play" id="_ey#PCeQ%{+sV+AP`nNz">
+        <field name="melody">DADADADUM</field>
+        <value name="pin">
+          <shadow type="mpython_music_pin_p6" id="5_kE1wZtK+@9xDS#!$I9">
+            <field name="music_pin">6</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_button_event" id="-(-p]u[SFw|rl{bA:^a." x="13" y="113">
+    <field name="BUTTON">b</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="microbit_music_stop" id="P9s(b[]EUK_e*R?NhD]@">
+        <value name="pin">
+          <shadow type="mpython_music_pin_p6" id="chF-zOZL-46WJg0tJzo{">
+            <field name="music_pin">6</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

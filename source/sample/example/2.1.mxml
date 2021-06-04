@@ -1,0 +1,24 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_music_tone_tempo" id="RYVQ]O1x}MdMgR2nc)cc" x="13" y="-263">
+    <value name="musical_note">
+      <shadow type="mpython_music_musical_note" id=";j@EWN}Wozq2aYY+!hB9">
+        <field name="musical_note">C3</field>
+        <field name="music_tick">1</field>
+      </shadow>
+    </value>
+    <value name="pin">
+      <shadow type="mpython_music_pin_p6" id="Vv|,yp1-06kD-[%.DyrN">
+        <field name="music_pin">6</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="mpython_music_play" id="_ey#PCeQ%{+sV+AP`nNz" x="12" y="-87">
+    <field name="melody">DADADADUM</field>
+    <value name="pin">
+      <shadow type="mpython_music_pin_p6" id="5_kE1wZtK+@9xDS#!$I9">
+        <field name="music_pin">6</field>
+      </shadow>
+    </value>
+  </block>
+</xml>

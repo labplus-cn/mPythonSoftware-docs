@@ -1,0 +1,91 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="Xw@ci00yRRqMx:be4{Vu" x="13" y="13">
+    <value name="ssid">
+      <shadow type="text" id="il@uK0g*tyfyfE3p1a-2">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id=",,IX%z(Y1/MFbaJ@2+sz">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_udp_init" id="QM.e7jl4luK[R*BWa6#o"></block>
+    </next>
+  </block>
+  <block type="mpython_udp_recv_event" id="hVLcV)]Ve9w3o)~:4Q%Y" x="13" y="113">
+    <statement name="DO">
+      <block type="controls_if" id="#M(?(#TOVlp[LVnXPQ#A">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="U]T!{1(/_ub.e::#),k^">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="mpython_udp_recv_msg" id=";L:bR?Rr{:DM}84|`CXZ"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="sDg:0M4X6`t{B~0/NKvK">
+                <field name="TEXT">show</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="mpython_display_fill" id="{:DwNC}l#Rr`tiZB?8c|">
+            <field name="display_fill">fill(0)</field>
+            <next>
+              <block type="mpython_display_pbm_data" id="ipNZyi6/X31;7?^JK.W}">
+                <value name="x">
+                  <shadow type="math_number" id="FnGrtv%,mIx!A8Xic[Pk">
+                    <field name="NUM">32</field>
+                  </shadow>
+                </value>
+                <value name="y">
+                  <shadow type="math_number" id="4oK-lX%n1u00ls9fSfqf">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="pbm_data">
+                  <block type="mpython_get_pbm_data" id="=TxvMRhhs!.=+V:Hp~**">
+                    <field name="select">0</field>
+                    <value name="file_path">
+                      <shadow type="mpython_pbm_image" id="^v8+.$;bt9G{u9RbV{K4">
+                        <field name="path">face/1.pbm</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="mpython_display_Show" id=")x.XYHyF5hlG.cTYRaKX"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="uM;%We=B{4r30DY56GHp">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="mpython_udp_recv_msg" id="4f6G|7FM7nr}s3@yv9l@"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="fs(uapipUuG2lI7H,laH">
+                <field name="TEXT">clear</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="mpython_display_fill" id="jyb!g+l.RpZnR]`sI5n*">
+            <field name="display_fill">fill(0)</field>
+            <next>
+              <block type="mpython_display_Show" id=".rc6SJh2_29!R2S6dl;c"></block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

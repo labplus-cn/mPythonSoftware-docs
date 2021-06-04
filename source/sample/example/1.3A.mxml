@@ -1,0 +1,75 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_button_event" id="M-cwWyZHPNA$M?U}GL/a" x="-737" y="-287">
+    <field name="BUTTON">a</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_fill" id=";7JHrXQ:a+/CoigX[#8?">
+        <field name="display_fill">fill(0)</field>
+        <next>
+          <block type="mpython_display_pbm_data" id="Le$z!S?C$]:hLk:I0Zy0">
+            <value name="x">
+              <shadow type="math_number" id="(ZfSE0|n]pRllK3(V^RU">
+                <field name="NUM">32</field>
+              </shadow>
+            </value>
+            <value name="y">
+              <shadow type="math_number" id="4j#-3fimpbyf;BSety^~">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="pbm_data">
+              <block type="mpython_get_pbm_data" id="nA*sF%rl.je}^!_Q+~e[">
+                <field name="select">0</field>
+                <value name="file_path">
+                  <shadow type="mpython_pbm_image" id="nyqup-@SB+CgX=5t0Q!N">
+                    <field name="path">face/1.pbm</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="mpython_display_Show" id="hVwh{AEpcK{tH}{p2?tX"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_button_event" id="ZcP?f+^zW3Msr60NG14h" x="-737" y="13">
+    <field name="BUTTON">b</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_fill" id="Hr0(o#.HP0/)OHbE57HM">
+        <field name="display_fill">fill(0)</field>
+        <next>
+          <block type="mpython_display_pbm_data" id="UE?9bYKtfB[[kNBybSIt">
+            <value name="x">
+              <shadow type="math_number" id="K.lnviW}$Ha]57^)E_-:">
+                <field name="NUM">32</field>
+              </shadow>
+            </value>
+            <value name="y">
+              <shadow type="math_number" id="xNzea^4P{%[2NV$[Q41Z">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="pbm_data">
+              <block type="mpython_get_pbm_data" id="ciEwkufD7~)]x#SKvMI/">
+                <field name="select">0</field>
+                <value name="file_path">
+                  <shadow type="mpython_pbm_image" id="$Hj_,HF@|c|e;jMV2{02">
+                    <field name="path">face/2.pbm</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="mpython_display_Show" id="|]?1[8F3Ai+b|nugPX),"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

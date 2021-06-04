@@ -1,0 +1,33 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_display_fill" id=";7JHrXQ:a+/CoigX[#8?" x="-687" y="-262">
+    <field name="display_fill">fill(0)</field>
+    <next>
+      <block type="mpython_display_pbm_data" id="Le$z!S?C$]:hLk:I0Zy0">
+        <value name="x">
+          <shadow type="math_number" id="(ZfSE0|n]pRllK3(V^RU">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id="4j#-3fimpbyf;BSety^~">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="pbm_data">
+          <block type="mpython_get_pbm_data" id="nA*sF%rl.je}^!_Q+~e[">
+            <field name="select">0</field>
+            <value name="file_path">
+              <shadow type="mpython_pbm_image" id="nyqup-@SB+CgX=5t0Q!N">
+                <field name="path">face/1.pbm</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="hVwh{AEpcK{tH}{p2?tX"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

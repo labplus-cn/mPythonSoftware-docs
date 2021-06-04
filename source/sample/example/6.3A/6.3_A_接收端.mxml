@@ -1,0 +1,70 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="2f:v@r_=c8Wo2I`_E%Td" x="13" y="13">
+    <value name="ssid">
+      <shadow type="text" id="ojSvdOT,jkry_-f7nL1F">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id="jS0f~d:8wL4DVj]G9I/6">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_udp_init" id="QM.e7jl4luK[R*BWa6#o"></block>
+    </next>
+  </block>
+  <block type="mpython_udp_recv_event" id="hVLcV)]Ve9w3o)~:4Q%Y" x="13" y="113">
+    <statement name="DO">
+      <block type="controls_if" id="#M(?(#TOVlp[LVnXPQ#A">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="U]T!{1(/_ub.e::#),k^">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="mpython_udp_recv_msg" id=";L:bR?Rr{:DM}84|`CXZ"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="sDg:0M4X6`t{B~0/NKvK">
+                <field name="TEXT">open</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="mpython_set_rgb_list_color" id="FUA.Zno#.*pO@ejyM1]m">
+            <field name="COLOUR">#00cccc</field>
+            <value name="num">
+              <shadow type="mpython_rgb_list" id="o9l|#Q5uk*ff$_e{n}xs">
+                <field name="rgb_list">-1</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="uM;%We=B{4r30DY56GHp">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="mpython_udp_recv_msg" id="4f6G|7FM7nr}s3@yv9l@"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="fs(uapipUuG2lI7H,laH">
+                <field name="TEXT">close</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="mpython_off_rgb_list" id="9#hW97KLOtO]=k[6Ui?)">
+            <value name="num">
+              <shadow type="mpython_rgb_list" id="=!e~SqI9_ZU:3-GZpV(j">
+                <field name="rgb_list">-1</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

@@ -1,0 +1,15 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="controls_repeat_forever" id="3uBtQH05W#7b0xL4avC-" x="13" y="212">
+    <statement name="DO">
+      <block type="text_print" id="*o(:{Ni3eSXh`+ijv`kQ">
+        <value name="TEXT">
+          <shadow type="text" id=")(a8r{Uls*gEk`,~mIgM">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="mpython_magnetic_get_field_strength" id="aFC-zzbhK*;57e|y4.8]"></block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

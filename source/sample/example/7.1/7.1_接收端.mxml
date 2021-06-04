@@ -1,0 +1,82 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="(Gi8Ke@*G(qBa7SHo@_z">_msg</variable>
+  </variables>
+  <block type="mpython_radio_channel" id="W3QuhMZ,B0V*3+rKvaR!" x="13" y="38">
+    <value name="channel">
+      <shadow type="math_number" id="vrdm@.kyO6OxL5[eT;Lo">
+        <field name="NUM">13</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_radio_on_off" id="qMJ.K^iONr+YPo~8QuF!">
+        <field name="on_off">on</field>
+      </block>
+    </next>
+  </block>
+  <block type="mpython_radio_recv" id="-%#yt8{__c2,}tT-Qz~r" x="13" y="138">
+    <value name="message">
+      <block type="variables_get" id="S`e#,-W)gi1/BmVBFw.|">
+        <field name="VAR" id="(Gi8Ke@*G(qBa7SHo@_z">_msg</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="h,Eg/P@5!?8Gc}IlS9Qr">
+        <value name="IF0">
+          <block type="logic_compare" id="]cg!]*Jg;0GnEZ}ZFl1{">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="c7cL:ao2Zer^CSACq=?*">
+                <field name="VAR" id="(Gi8Ke@*G(qBa7SHo@_z">_msg</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="5tP6[?0%2B6{ntoESQzi">
+                <field name="TEXT">hello</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="mpython_display_fill" id="(]{4LdVwh7RwR)J)DO-S">
+            <field name="display_fill">fill(0)</field>
+            <next>
+              <block type="mpython_display_DispChar_5lines" id="#Mh!Fh#IA`5EAi/qFtdO">
+                <field name="TEXTMODE">1</field>
+                <field name="AUTORETURN">False</field>
+                <value name="DispChar_5lines">
+                  <shadow type="mpython_4_lines" id="qu_X[NHoZxi-g!$NC^bl">
+                    <field name="mpython_4_lines">1</field>
+                  </shadow>
+                </value>
+                <value name="message">
+                  <shadow type="text" id="B.)AK{f)T6DBcK-yS_6s">
+                    <field name="TEXT">Hello, world!</field>
+                  </shadow>
+                  <block type="variables_get" id="_85ue.,}gJRk@AO^{k@W">
+                    <field name="VAR" id="(Gi8Ke@*G(qBa7SHo@_z">_msg</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="mpython_display_Show" id="Hn|Jn7*YZvm|DGO$HGRI">
+                    <next>
+                      <block type="mpython_music_play" id=":SJG75-.8)=ScZ?1KgiH">
+                        <field name="melody">DADADADUM</field>
+                        <value name="pin">
+                          <shadow type="mpython_music_pin_p6" id="sL@LAk6:i)^~|#oZ@`[u">
+                            <field name="music_pin">6</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

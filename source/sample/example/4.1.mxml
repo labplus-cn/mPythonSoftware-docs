@@ -1,0 +1,15 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="controls_repeat_forever" id="8Xp0Rj@{1)7nO?IW{4Gq" x="38" y="87">
+    <statement name="DO">
+      <block type="text_print" id="yB+,AQRYHz7{L!smf{7q">
+        <value name="TEXT">
+          <shadow type="text" id="iOl~18VBv2_xmE7;Pl?r">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="mpython_read_light" id="I5F5b6,Cd|8Sd3!Tgj@2"></block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

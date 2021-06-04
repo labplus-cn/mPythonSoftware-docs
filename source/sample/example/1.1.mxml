@@ -1,0 +1,25 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_display_fill" id=";7JHrXQ:a+/CoigX[#8?" x="-637" y="-212">
+    <field name="display_fill">fill(0)</field>
+    <next>
+      <block type="mpython_display_DispChar_5lines" id="P#}M2]Vo6:5qK8tJ}~mH">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="DispChar_5lines">
+          <shadow type="mpython_4_lines" id=":^g{lg^2uW(Q:S@FZONZ">
+            <field name="mpython_4_lines">2</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="*tEt1?^?#,Zxrst90.B%">
+            <field name="TEXT">掌控板</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="hVwh{AEpcK{tH}{p2?tX"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

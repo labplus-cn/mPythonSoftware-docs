@@ -1,0 +1,44 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="v+pB~Fd6#AVr1Y|WIswy" x="13" y="13">
+    <value name="ssid">
+      <shadow type="text" id="%B8]z:mM54u*9=Jc`_lg">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id="d}onK^rwe1F1C}fi3l@m">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_udp_init" id="QM.e7jl4luK[R*BWa6#o"></block>
+    </next>
+  </block>
+  <block type="mpython2_button_event" id=",:!dmx|^)$;M}Zfe89fO" x="13" y="113">
+    <field name="BUTTON">a</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_udp_send" id="^E}zs(Q2@YPJRDoYs[NN">
+        <value name="VALUE">
+          <shadow type="text" id="jE`Jl|)5Wb3a5TGqE1}d">
+            <field name="TEXT">show</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_button_event" id="3OT(vZwq-$Qw0)*p#vrK" x="13" y="213">
+    <field name="BUTTON">b</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_udp_send" id="c#)XVfYIpx=@Kd6SediH">
+        <value name="VALUE">
+          <shadow type="text" id="+XlzuYFbLlA:S9hgVQ^%">
+            <field name="TEXT">clear</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

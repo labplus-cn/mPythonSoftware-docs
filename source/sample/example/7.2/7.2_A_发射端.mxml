@@ -1,0 +1,93 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_radio_on_off" id="/CS#]K:_2!=(WHyDTmxL" x="13" y="13">
+    <field name="on_off">on</field>
+    <next>
+      <block type="mpython_radio_channel" id="fPrIMU__RGDhZWfjz):b">
+        <value name="channel">
+          <shadow type="math_number" id="JEyaX(qwTnZnK7%qCH)D">
+            <field name="NUM">13</field>
+          </shadow>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="mpython2_touchpad_event" id=".p?;36H*u]9vIdy{}OIm" x="13" y="113">
+    <field name="BUTTON">p</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="zWa2@Vmy8R+JDl+1/q]l">
+        <value name="send">
+          <shadow type="text" id=")G9,u:,,diy1_e09sLaI">
+            <field name="TEXT">1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="L.)w#vmI:^m8=UO!P1vD" x="13" y="213">
+    <field name="BUTTON">y</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="%+jv~S./U;iU!F]!`v[,">
+        <value name="send">
+          <shadow type="text" id="`w_N*Mo|6RdQk!J!;2b$">
+            <field name="TEXT">2</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="GF$H7^K@Qg_(`igCv427" x="13" y="313">
+    <field name="BUTTON">t</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="T^H[(gz*;KqT4~;4COlV">
+        <value name="send">
+          <shadow type="text" id="%tF}PM;m17baBm8aSfN2">
+            <field name="TEXT">3</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="gsV2E2*eW*cHh+8+9SB#" x="13" y="413">
+    <field name="BUTTON">h</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="R5|h,B3xQ^o)3h6~yivZ">
+        <value name="send">
+          <shadow type="text" id="DAOr;PoyI:_I2LOG)Tw_">
+            <field name="TEXT">-1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="Sw_$haA-oiU`cDKmxV+e" x="13" y="513">
+    <field name="BUTTON">o</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="[WnSx2??su2df%%54GGH">
+        <value name="send">
+          <shadow type="text" id="}0KB|vu(6+;4I9/LY5D;">
+            <field name="TEXT">-2</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="}]tRc2GE_RPp_PZxcKk6" x="13" y="613">
+    <field name="BUTTON">n</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="u@7Cttz_#.N*6Sh{rtoQ">
+        <value name="send">
+          <shadow type="text" id="-v1=Gkb!Cn^d%d{};=`9">
+            <field name="TEXT">-3</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

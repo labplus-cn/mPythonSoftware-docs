@@ -1,0 +1,70 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_set_rgb_list_color" id="8lD?uxM/o3+-$Z$~/gwE" x="13" y="-63">
+    <field name="COLOUR">#ff0000</field>
+    <value name="num">
+      <shadow type="mpython_rgb_list" id="c^!Y_CbFmY?Rk#pzK/3Q">
+        <field name="rgb_list">0</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_sleep_ms" id="GzxJ~dv,Vwsw4+be_vni">
+        <field name="ms_us">s</field>
+        <value name="duration">
+          <shadow type="math_number" id="hXm-?$m;[14.:~Db2Sqw">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_set_rgb_list_color" id="m4TbOgtq/t[LemKX*RSb">
+            <field name="COLOUR">#ffff00</field>
+            <value name="num">
+              <shadow type="mpython_rgb_list" id="1]Kg6z}|kswnzQso0rS3">
+                <field name="rgb_list">1</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="mpython_sleep_ms" id="8,Fo0*5^P%Gpe66KFaY%">
+                <field name="ms_us">s</field>
+                <value name="duration">
+                  <shadow type="math_number" id="cY-oFN|[6VmDuxRp!];}">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="mpython_set_rgb_list_color" id="Mji,LaLOl(W*@FuBZB;_">
+                    <field name="COLOUR">#33ccff</field>
+                    <value name="num">
+                      <shadow type="mpython_rgb_list" id="_xEGF8m{/p{AH7_T6F2$">
+                        <field name="rgb_list">2</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="mpython_sleep_ms" id=";|Ba1R.nCUAbFgtixu16">
+                        <field name="ms_us">s</field>
+                        <value name="duration">
+                          <shadow type="math_number" id="n)%*|8MGK)2!1k4#JPUl">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="mpython_off_rgb_list" id="CsAYFX/rfb5QAqXij!e?">
+                            <value name="num">
+                              <shadow type="mpython_rgb_list" id="IgiWm?B!U%22eIY5-)d~">
+                                <field name="rgb_list">-1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

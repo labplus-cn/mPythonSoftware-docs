@@ -1,0 +1,84 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_touchpad_event" id="].G6u/#^+WR][B+18tm|" x="13" y="13">
+    <field name="BUTTON">p</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_set_rgb_list_color" id="8,r;?5kT6D_fgtax:@J)">
+        <field name="COLOUR">#ff0000</field>
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="Fzq[Tv$S,xh3w]GzNFn8">
+            <field name="rgb_list">0</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="/+E;/*cotY(#P~KIgOub" x="13" y="113">
+    <field name="BUTTON">y</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="TM;F^RU-8|yOW_]roE[O">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="X@/R1baw^Pyu#QG6eO_m">
+            <field name="rgb_list">0</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="D#5-/-Mw_ErXdkbNHS!|" x="13" y="213">
+    <field name="BUTTON">t</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_set_rgb_list_color" id="|!(dij}X_][$vzf$)VLb">
+        <field name="COLOUR">#ff0000</field>
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="A,hMN/nkO+?{~X0-(*eg">
+            <field name="rgb_list">1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="`Fuw0S3Z{USQY;^D+%|k" x="13" y="313">
+    <field name="BUTTON">h</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="+[}jRjb?1x8Nz7CU57Dj">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="?vrr$s`gTiVM~E]:X^IF">
+            <field name="rgb_list">1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="/Q52U9};Q.@m2cCt#eNx" x="13" y="413">
+    <field name="BUTTON">o</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_set_rgb_list_color" id="B4!yx`xk`d%AOW`ca8cI">
+        <field name="COLOUR">#ff0000</field>
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="G-5=dl^CyS3@@VyT~w0E">
+            <field name="rgb_list">2</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="tp!GrF93Aw1d~UHJbZ)S" x="13" y="513">
+    <field name="BUTTON">n</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="B!22QXL$Jln:zSLa[I=T">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="cA.x2:a7:G|NQ,#]|,Sw">
+            <field name="rgb_list">2</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

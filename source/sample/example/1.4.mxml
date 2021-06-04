@@ -1,0 +1,61 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="i|,d_xy%5gH:K0#I-n47">a</variable>
+  </variables>
+  <block type="variables_set" id="9.+!?`DD{Zl#MHOg5c+R" x="-37" y="88">
+    <field name="VAR" id="i|,d_xy%5gH:K0#I-n47">a</field>
+    <value name="VALUE">
+      <block type="math_number" id="eOXt:izhZ.N6-gF.m^O{">
+        <field name="NUM">64</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_repeat_forever" id="*qrQDN)Jwc7~t`Wpaq7e">
+        <statement name="DO">
+          <block type="mpython_display_fill" id="WzJe;$,aQviNR;85wCDt">
+            <field name="display_fill">fill(0)</field>
+            <next>
+              <block type="mpython_display_DispChar" id="+TCWF|*)AS7RzN=JAUJO">
+                <field name="TEXTMODE">1</field>
+                <field name="AUTORETURN">False</field>
+                <value name="x">
+                  <shadow type="math_number" id="tI7:xqYaQXDJ8TI@lA}{">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="y">
+                  <shadow type="math_number" id=";A]_`T}zY;Z}lY4K3N_R">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get" id="!d{Kt[sXajg8TTv5j2q#">
+                    <field name="VAR" id="i|,d_xy%5gH:K0#I-n47">a</field>
+                  </block>
+                </value>
+                <value name="message">
+                  <shadow type="text" id="QCD`Cu~N)E-J]$jd*bLO">
+                    <field name="TEXT">掌控板，掌控未来！</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="mpython_display_Show" id="IDi3kRBtn3|sL-%Ys#+v">
+                    <next>
+                      <block type="math_change" id="e:WGsnwSTYyOt0(_hg+J">
+                        <field name="VAR" id="i|,d_xy%5gH:K0#I-n47">a</field>
+                        <value name="DELTA">
+                          <shadow type="math_number" id="h6bZfG7hiBrY$(1,WtCc">
+                            <field name="NUM">-1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

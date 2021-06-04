@@ -1,0 +1,67 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="CL8**C[DCP9`,MY6hC92" x="-138" y="-13">
+    <value name="ssid">
+      <shadow type="text" id="Qca}UfldaIt0_|8VC;y1">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id="EG2ppBF3yxdlHBh;@?YI">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_ntptime_settime" id="3d!#nUG(A=LALNi_v^UB">
+        <field name="timezone">8</field>
+        <field name="server">time.windows.com</field>
+        <next>
+          <block type="controls_repeat_forever" id="~3.|;)-F_d8rXUc.X=j}">
+            <statement name="DO">
+              <block type="mpython_display_fill" id="]@IwJM1XfwcTA*b(*#dY">
+                <field name="display_fill">fill(0)</field>
+                <next>
+                  <block type="mpython_display_DispChar_5lines" id="H*xZlbhGH]wJmyQppb{M">
+                    <field name="TEXTMODE">1</field>
+                    <field name="AUTORETURN">False</field>
+                    <value name="DispChar_5lines">
+                      <shadow type="mpython_4_lines" id="+gNHyqdZgp%OHF8!{Ta-">
+                        <field name="mpython_4_lines">1</field>
+                      </shadow>
+                    </value>
+                    <value name="message">
+                      <shadow type="text" id="pV$Ot2~{XWmXM-#=?BE^">
+                        <field name="TEXT">Hello, world!</field>
+                      </shadow>
+                      <block type="mpython_wifi_get_date" id="0||._wm)iBxn|=@/CyTp"></block>
+                    </value>
+                    <next>
+                      <block type="mpython_display_DispChar_5lines" id="*5tg%4t]r^;7Sh:ptN|k">
+                        <field name="TEXTMODE">1</field>
+                        <field name="AUTORETURN">False</field>
+                        <value name="DispChar_5lines">
+                          <shadow type="mpython_4_lines" id="+q-d835AQ`,n`8n.Qt{6">
+                            <field name="mpython_4_lines">2</field>
+                          </shadow>
+                        </value>
+                        <value name="message">
+                          <shadow type="text">
+                            <field name="TEXT">Hello, world!</field>
+                          </shadow>
+                          <block type="mpython_wifi_get_time" id="L76Wr^z^mpAy~Nw^gHaA"></block>
+                        </value>
+                        <next>
+                          <block type="mpython_display_Show" id="`?5_XY6MI]6koDY$/}O!"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

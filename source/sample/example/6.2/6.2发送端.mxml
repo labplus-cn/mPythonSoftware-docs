@@ -1,0 +1,32 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="auDzK@+=hwJOGuU4$t4M" x="-113" y="-38">
+    <value name="ssid">
+      <shadow type="text" id="r5?ToFwF5^:$5QZ@Jo7=">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id="Gm^not;`vT+Gbc75%_b#">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_udp_init" id="QM.e7jl4luK[R*BWa6#o">
+        <next>
+          <block type="controls_repeat_forever" id="cy+LMNS(3hbH2q~~A`0;">
+            <statement name="DO">
+              <block type="mpython_udp_send" id="+xso*8?L)*QlK0gfUT#~">
+                <value name="VALUE">
+                  <shadow type="text" id=",1*#d{t`Tn*.2gZ3?aAX">
+                    <field name="TEXT">zhangkongban</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

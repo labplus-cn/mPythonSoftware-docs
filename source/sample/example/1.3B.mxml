@@ -1,0 +1,171 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_touchpad_event" id="4)i,T+QQk,[D.W%dD*+:" x="13" y="13">
+    <field name="BUTTON">p</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_DispChar" id="pW`64Avu7u0@?$=IDDw/">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="x">
+          <shadow type="math_number" id="!ZEm{V#ipb7W=/CaP[@x">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id="huu3r9SZ0N+BF_c50_|i">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="S`[5P]rkGLBrG=fER=If">
+            <field name="TEXT">爱</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="hVwh{AEpcK{tH}{p2?tX"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="pO|Ml+[qV4u9me2HAsV=" x="13" y="163">
+    <field name="BUTTON">y</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_DispChar" id="qb]N#xWC44mYrpP4?71~">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="x">
+          <shadow type="math_number" id="w(D+Rtu!$Dlw,!)M=?B|">
+            <field name="NUM">24</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id="NQ(w]%2?6wZKDTzPusjW">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="}t+$+Vk~Jzkll8nUs);T">
+            <field name="TEXT">上</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id=":IK!jFU//f2YC9]:KP8["></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="l@rtuT(uyIzNK2MC3eTn" x="13" y="313">
+    <field name="BUTTON">t</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_DispChar" id="85anDb;Za6L^l^p=B=@M">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="x">
+          <shadow type="math_number" id="=p!SC31V%+/](()Hmaw{">
+            <field name="NUM">48</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id="spau^rr1A1yQxcNz4Y9J">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="eVKPM2Ecz[an1uIrmeNK">
+            <field name="TEXT">掌</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="U5aml%NgA2t/=1g=C^G7"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="MKuo`X3@PwV#rPon*R1t" x="13" y="463">
+    <field name="BUTTON">h</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_DispChar" id="Jwah3rN%@iZlj)mW`0e]">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="x">
+          <shadow type="math_number" id="g!W.`wF(;#+91`O12%.A">
+            <field name="NUM">72</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id=";],e`4gP!2pO.%S)wh9Z">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="LP(6V-fp#kN(EGILklYc">
+            <field name="TEXT">控</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="}x%t#6kaFAIaf:7;U,nn"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="EYf]agYD.ir%0L(!].*O" x="13" y="613">
+    <field name="BUTTON">o</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_DispChar" id="qx`oJw*|InQ|x%+Rsh3(">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="x">
+          <shadow type="math_number" id="C=/mshZ(NlJEqV6At.yq">
+            <field name="NUM">96</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id="eJ[B|Ip8^mhAs;A}]pQ{">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="4Ne/%gGVc]mIuSyp2o^8">
+            <field name="TEXT">板</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="Rn7[mawbK{,bM?tibG-w"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_touchpad_event" id="wwWbAe5pcB:n.,F5*=Nt" x="13" y="763">
+    <field name="BUTTON">n</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_display_DispChar" id="5wjjFj=8*1+kX9DqU09t">
+        <field name="TEXTMODE">1</field>
+        <field name="AUTORETURN">False</field>
+        <value name="x">
+          <shadow type="math_number" id="nd);w3Kpd]owJfK7r]1m">
+            <field name="NUM">120</field>
+          </shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number" id="ORdGDn+/~yE9m:yF4rEx">
+            <field name="NUM">32</field>
+          </shadow>
+        </value>
+        <value name="message">
+          <shadow type="text" id="Snuj`SLBg-6#4al%Rt@v">
+            <field name="TEXT">！</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="mpython_display_Show" id="NjdVi$5,v-LwnE3t$]vq"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

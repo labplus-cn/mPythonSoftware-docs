@@ -1,0 +1,33 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_init_wifi" id="=T.QIr^cE#aX~`Uo-4|e" x="87" y="13">
+    <value name="ssid">
+      <shadow type="text" id="MN;/o*{ozN2!$9s4wkdC">
+        <field name="TEXT">my_wifi</field>
+      </shadow>
+    </value>
+    <value name="password">
+      <shadow type="text" id="-b6`we%..tpUmu%Fsd4I">
+        <field name="TEXT">1234</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_audio_init" id="xUF,t#)PO}rGq]E(b#Bu">
+        <next>
+          <block type="mpython_audio_set_volume" id="!itXF}n5*r)GEB8[7|ur">
+            <value name="volume">
+              <shadow type="math_number" id=".|Z:9{,esQ(7]So;IP[c">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="mpython_audio_play_choose" id="3$rE$(%dfUnVK):j@rPQ">
+                <field name="cmd">'http://cdn.makeymonkey.com/test/32_%E6%8B%94%E8%90%9D%E5%8D%9C.mp3'</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

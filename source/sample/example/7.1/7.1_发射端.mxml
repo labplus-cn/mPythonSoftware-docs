@@ -1,0 +1,28 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython_radio_channel" id="W3QuhMZ,B0V*3+rKvaR!" x="13" y="38">
+    <value name="channel">
+      <shadow type="math_number" id="vrdm@.kyO6OxL5[eT;Lo">
+        <field name="NUM">13</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="mpython_radio_on_off" id="qMJ.K^iONr+YPo~8QuF!">
+        <field name="on_off">on</field>
+      </block>
+    </next>
+  </block>
+  <block type="mpython2_button_event" id="zrZxJL?=U!vGFRybf;Zt" x="13" y="137">
+    <field name="BUTTON">a</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_radio_send" id="Ae{MYfjsSAK$zuK3dqj@">
+        <value name="send">
+          <shadow type="text" id="gP24-/J2HcFOGMS@`zyV">
+            <field name="TEXT">hello</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

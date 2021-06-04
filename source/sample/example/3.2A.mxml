@@ -1,0 +1,30 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_button_event" id="Uk[bo%BT3z^?*tTGKr^]" x="-38" y="188">
+    <field name="BUTTON">a</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_set_rgb_list_color" id="B0TPu^~,gk6j{~L=$I.B">
+        <field name="COLOUR">#3366ff</field>
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="$Fj2:j(_uizqhHJigj9=">
+            <field name="rgb_list">-1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_button_event" id="5+dkt`AyPI^cKaJk,oe}" x="-38" y="363">
+    <field name="BUTTON">b</field>
+    <field name="ACTION">pressed</field>
+    <statement name="DO">
+      <block type="mpython_off_rgb_list" id="v@=7dzAq$R$vP]Euhv5S">
+        <value name="num">
+          <shadow type="mpython_rgb_list" id="P]p|[wpRD7/5MYe-[Hzh">
+            <field name="rgb_list">-1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

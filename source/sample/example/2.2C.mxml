@@ -1,0 +1,75 @@
+<!--mPythonType:0-->
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="mpython2_accelerometer_event" id="^*=tP@PN4L!?,$lich_e" x="13" y="13">
+    <field name="ACTION">tilt_up</field>
+    <statement name="DO">
+      <block type="mpython_music_tone_tempo" id="41H(=@GBE-FL`}[RQ~/[">
+        <value name="musical_note">
+          <shadow type="mpython_music_musical_note" id="{BknLNQ9o:|GwS+`HRrC">
+            <field name="musical_note">C3</field>
+            <field name="music_tick">1</field>
+          </shadow>
+        </value>
+        <value name="pin">
+          <shadow type="mpython_music_pin_p6" id="$z!$B*D!yUj5Yg#VX?u*">
+            <field name="music_pin">6</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_accelerometer_event" id="U%fWoqJ`)=1NTX@6U$^U" x="13" y="113">
+    <field name="ACTION">tilt_down</field>
+    <statement name="DO">
+      <block type="mpython_music_tone_tempo" id="]m4_]XzX[:0Ae0{M?*aN">
+        <value name="musical_note">
+          <shadow type="mpython_music_musical_note" id="h0d0ZEE~}40yN1aM%,`N">
+            <field name="musical_note">C3</field>
+            <field name="music_tick">2</field>
+          </shadow>
+        </value>
+        <value name="pin">
+          <shadow type="mpython_music_pin_p6" id=")PM4a`S0@yF=PLZ8L]9z">
+            <field name="music_pin">6</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_accelerometer_event" id="5u5{s}4l%j^PfCzm(_Vd" x="13" y="213">
+    <field name="ACTION">tilt_left</field>
+    <statement name="DO">
+      <block type="mpython_music_tone_tempo" id="x9B)QxH9jO))cQ%EVJwn">
+        <value name="musical_note">
+          <shadow type="mpython_music_musical_note" id="${u2J-K1(W_gW]:5*_vQ">
+            <field name="musical_note">C3</field>
+            <field name="music_tick">4</field>
+          </shadow>
+        </value>
+        <value name="pin">
+          <shadow type="mpython_music_pin_p6" id="tG[~yO;;X+,nzWg!2wS-">
+            <field name="music_pin">6</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="mpython2_accelerometer_event" id="t.`j[mSyRQb/n.A(@c|4" x="13" y="313">
+    <field name="ACTION">tilt_right</field>
+    <statement name="DO">
+      <block type="mpython_music_tone_tempo" id="4;0Vi]7SO[%pjG0Fo4a:">
+        <value name="musical_note">
+          <shadow type="mpython_music_musical_note" id="SMH*!)%Y1!D~.z;%M5mc">
+            <field name="musical_note">C3</field>
+            <field name="music_tick">8</field>
+          </shadow>
+        </value>
+        <value name="pin">
+          <shadow type="mpython_music_pin_p6" id="B|,Vj:jN6V``o5mOK/H(">
+            <field name="music_pin">6</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
