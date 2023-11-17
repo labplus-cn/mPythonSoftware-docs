@@ -21,13 +21,13 @@ import shlex
 # -- Project information -----------------------------------------------------
 
 project = u'mPython 帮助文档'
-copyright = '2021, LabPlus'
+copyright = '2022, LabPlus'
 author = 'LabPlus'
 
 # The short X.Y version
 
 # The full version, including alpha/beta/rc tags
-version = release = '0.5.4'
+version = release = '0.7.5'
 
 
 # -- General configuration ---------------------------------------------------
@@ -133,7 +133,7 @@ html_logo = 'images/logo.png'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['static']
+# html_static_path = ['static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

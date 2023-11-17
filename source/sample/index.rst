@@ -13,7 +13,7 @@
 
 .. toctree::
     :maxdepth: 1
-
+    
     oled.rst
     music.rst
     rgb.rst

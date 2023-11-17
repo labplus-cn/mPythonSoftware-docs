@@ -1,57 +1,75 @@
 <!--mPythonType:0-->
 <xml xmlns="https://developers.google.com/blockly/xml">
-  <block type="mpython_init_wifi" id="CL8**C[DCP9`,MY6hC92" x="-138" y="-13">
+  <block type="mpython_init_wifi" id="fW{x9U-LjIRXNjD:Y#%Q" x="313" y="188">
     <value name="ssid">
-      <shadow type="text" id="Qca}UfldaIt0_|8VC;y1">
-        <field name="TEXT">my_wifi</field>
+      <shadow type="text" id="5r^j~Eojj~E!-NDW}Bhb">
+        <field name="TEXT"></field>
       </shadow>
     </value>
     <value name="password">
-      <shadow type="text" id="EG2ppBF3yxdlHBh;@?YI">
-        <field name="TEXT">1234</field>
+      <shadow type="text" id="C]LIl%gR^SZ[gFjQbbm6">
+        <field name="TEXT"></field>
       </shadow>
     </value>
     <next>
-      <block type="mpython_ntptime_settime" id="3d!#nUG(A=LALNi_v^UB">
-        <field name="timezone">8</field>
-        <field name="server">time.windows.com</field>
-        <next>
-          <block type="controls_repeat_forever" id="~3.|;)-F_d8rXUc.X=j}">
+      <block type="controls_if" id=",AR-y@DFp5~nD+V73}%1">
+        <value name="IF0">
+          <block type="mpython_wifi_isconnected" id=".NxXw.+mE1@Te29T#9@~"></block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_repeat_forever" id="Z^``j#J{3`?G{0F5qT-d">
             <statement name="DO">
-              <block type="mpython_display_fill" id="]@IwJM1XfwcTA*b(*#dY">
-                <field name="display_fill">fill(0)</field>
+              <block type="mpython_ntptime_settime" id="@I)eF{}ohNU;`8~3HWlg">
+                <field name="timezone">8</field>
+                <field name="server">time.windows.com</field>
                 <next>
-                  <block type="mpython_display_DispChar_5lines" id="H*xZlbhGH]wJmyQppb{M">
-                    <field name="TEXTMODE">1</field>
-                    <field name="AUTORETURN">False</field>
-                    <value name="DispChar_5lines">
-                      <shadow type="mpython_4_lines" id="+gNHyqdZgp%OHF8!{Ta-">
-                        <field name="mpython_4_lines">1</field>
-                      </shadow>
-                    </value>
-                    <value name="message">
-                      <shadow type="text" id="pV$Ot2~{XWmXM-#=?BE^">
-                        <field name="TEXT">Hello, world!</field>
-                      </shadow>
-                      <block type="mpython_wifi_get_date" id="0||._wm)iBxn|=@/CyTp"></block>
-                    </value>
+                  <block type="mpython_display_fill" id="S5`3%Yd!l7cR;Yt(Z[PM">
+                    <field name="display_fill">fill(0)</field>
                     <next>
-                      <block type="mpython_display_DispChar_5lines" id="*5tg%4t]r^;7Sh:ptN|k">
+                      <block type="mpython_display_DispChar_5lines" id="GrwCmf$3Z7eu(PSR`Y;R">
                         <field name="TEXTMODE">1</field>
                         <field name="AUTORETURN">False</field>
                         <value name="DispChar_5lines">
-                          <shadow type="mpython_4_lines" id="+q-d835AQ`,n`8n.Qt{6">
-                            <field name="mpython_4_lines">2</field>
+                          <shadow type="mpython_4_lines" id="C)2z:pq3rBLKH!mvq$CH">
+                            <field name="mpython_4_lines">1</field>
                           </shadow>
                         </value>
                         <value name="message">
-                          <shadow type="text">
+                          <shadow type="text" id="@gTW$^)`ksBu%BwzcPA6">
                             <field name="TEXT">Hello, world!</field>
                           </shadow>
-                          <block type="mpython_wifi_get_time" id="L76Wr^z^mpAy~Nw^gHaA"></block>
+                          <block type="mpython_wifi_get_date" id="]{0XC1OkGtBLNXK/}tS#"></block>
                         </value>
                         <next>
-                          <block type="mpython_display_Show" id="`?5_XY6MI]6koDY$/}O!"></block>
+                          <block type="mpython_display_DispChar_5lines" id=",caxXb%lg,KRJV@jrs+g">
+                            <field name="TEXTMODE">1</field>
+                            <field name="AUTORETURN">False</field>
+                            <value name="DispChar_5lines">
+                              <shadow type="mpython_4_lines" id=")DX5%BKR|9Gskwv3UNnY">
+                                <field name="mpython_4_lines">2</field>
+                              </shadow>
+                            </value>
+                            <value name="message">
+                              <shadow type="text" id="U3XcX)ATlwr(uPudeH$#">
+                                <field name="TEXT">Hello, world!</field>
+                              </shadow>
+                              <block type="mpython_wifi_get_time" id="72?f.;ti8w4eWf45Uvd!"></block>
+                            </value>
+                            <next>
+                              <block type="mpython_display_Show" id="FwP^`!l/EVe/s37AU;C_">
+                                <next>
+                                  <block type="mpython_sleep_ms" id=".ljZAIL/}:kT93m%~V{r">
+                                    <field name="ms_us">s</field>
+                                    <value name="duration">
+                                      <shadow type="math_number" id="h,*rSoY%Kbc1Mr7=bg}J">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
@@ -60,7 +78,7 @@
               </block>
             </statement>
           </block>
-        </next>
+        </statement>
       </block>
     </next>
   </block>
